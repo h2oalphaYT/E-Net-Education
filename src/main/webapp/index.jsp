@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>E-Net Education</title>
 </head>
 <body>
-
+	<h1>E-Net Education Home Page</h1>
+	<p>Online Examination Management System</p>
 </body>
 </html>

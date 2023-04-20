@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+body{
+	background-color: #F4B183;	
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+p{
+	font-size: 15px;
+	color: #F9F6EE;
+	text-align: center;
+	text-indent: 15px;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1{
+	color: #FFF2CC;
+	text-align: center;
+	font-size: 35px;
+}
+
+.details{
+	color: red;
+	text-align: center;
+	text-indent: 10px;
+	line-height: 2;
+}
+
+
+/*unvisted link*/
+a:link{
+	color: #323E42;
+}
+
+/*visited link*/
+a:visted{
+	color: #9FE2BF;
+}
+
+/*mouse over hover*/
+a:hover{
+	color: #EFDCF9;
+}
+
+/*selected link*/
+a:active{
+	color: #6495ED;
+}

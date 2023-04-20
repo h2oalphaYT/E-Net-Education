@@ -2,6 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="ISO-8859-1">
 <title>E-Net Education</title>
@@ -20,7 +21,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : initial" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active"   aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>
@@ -56,7 +57,7 @@
 
 
 
-hi
+
 
 
 
@@ -89,7 +90,7 @@ hi
   </div>
 
   <div class="column subscribe">
-    <h3>Newsletter</h3>
+    <h6>Providing your children with a batter future</h6>
     <div>
       <input type="email" placeholder="Your email id here" />
       <button>Subscribe</button>
@@ -107,7 +108,7 @@ hi
   <a href="">Support</a>
 
   </div>
-   <p>Copyright &copy; 2022</p>
+   <p>Copyright &copy; 2023</p>
 </div>
 
 </footer>
@@ -116,5 +117,7 @@ hi
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-</body>
+
+
+
 </html>

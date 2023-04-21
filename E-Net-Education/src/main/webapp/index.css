@@ -5,6 +5,7 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 16px;
+ 
 }
 footer * {
   box-sizing: border-box;
@@ -41,7 +42,7 @@ ul {
   padding: 0;
   margin: 0;
 }
-li a:not(:first-child) {
+.back-nav:not(:first-child) {
   margin-top: 0.8em;
 }
 ul li a {
@@ -91,12 +92,13 @@ div.social {
 }
 .footer-menu{
   float: left;
-    margin-top: 10px;
+    
 }
 .footer-menu a{
   color: #cfd2d6;
-  padding: 6px;
-  text-decoration: none;
+  padding: 10px;
+  margin-top :10px;
+  text-decoration : none;
 }
 .footer-menu a:hover, .social i:hover{
   color: #c7940a;
@@ -105,3 +107,56 @@ div.social {
   font-size: 0.9em;
   text-align: right;
 }
+
+
+
+
+
+.hero-image {
+
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  bottom : 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #c7940a;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .hero-text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .hero-text {
+    font-size: 10px;
+  }
+}
+
+
+  
+

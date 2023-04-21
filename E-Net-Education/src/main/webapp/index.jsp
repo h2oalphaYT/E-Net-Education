@@ -18,13 +18,13 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : initial" >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : 0.2" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a  class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a href="Registation.jsp" class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,6 +56,19 @@
 
 <img src="images/bg.jpg" width = "100%" >
 
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:150px">Exam Bank </h1>
+    <p>Get The Best Free Online Exam Experience</p>
+    <div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-dark" type="button" >Login</button>
+  
+</div>
+  </div>
+</div>
+
+
+
 
 
 <footer>
@@ -77,10 +90,10 @@
   <div class="column link">
     <h3>Links</h3>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#blogs">Blogs</a></li>
-      <li><a href="#support">Support</a></li>
+      <li class = "back-nav"><a href="#home">Home</a></li>
+      <li class = "back-nav"><a href="#team">Team</a></li>
+      <li class = "back-nav"><a href="#blogs">Blogs</a></li>
+      <li class = "back-nav"><a href="#support">Support</a></li>
     </ul>
   </div>
 
@@ -96,11 +109,11 @@
 <div class="row copyright">
   <div class="footer-menu">
 
-  <a href="">Home</a>
-  <a href="">F.A.Q</a>
-  <a href="">Cookies Policy</a>
-  <a href="">Terms Of Service</a>
-  <a href="">Support</a>
+  <a href="#">Home</a>
+  <a href="#">F.A.Q</a>
+  <a href="#">Cookies Policy</a>
+  <a href="#">Terms Of Service</a>
+  <a href="#">Support</a>
 
   </div>
    <p>Copyright &copy; 2023</p>

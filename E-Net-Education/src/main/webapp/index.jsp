@@ -54,7 +54,7 @@
   </div>
 </nav>
 
-<img src="images/bg.jpg">
+<img src="images/bg.jpg" width = "100%" >
 
 
 

@@ -145,6 +145,10 @@ div.social {
   background-color: #c7940a;
   color: white;
 }
+.dropdown-item a:hover{
+  background-color: #c7940a;
+  color: white;
+}
 
 @media (min-width: 1200px) {
   .hero-text {

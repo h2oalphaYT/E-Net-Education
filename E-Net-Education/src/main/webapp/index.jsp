@@ -18,13 +18,15 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : 0.2" >
+    
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : 0.05" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a  class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a href="Registation.jsp" class="nav-link" href="#">About Us</a>
+          <a href="" class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,6 +48,24 @@
             <li><a class="dropdown-item" href="#">hithanna danna ekak</a></li>
            
           </ul>
+        </li>
+         <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-user" aria-hidden="true"></i>  Profile </a>
+                
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="#">My account</a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" href="#">Log out</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+          <a href="Registation.jsp" class="nav-link" href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Registration</a>
         </li>
       
       </ul>

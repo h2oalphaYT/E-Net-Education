@@ -13,7 +13,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, #0000008c , black);
 }
 .container{
   max-width: 700px;
@@ -36,7 +36,7 @@ body{
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg,  #c7940a,#25262e );
 }
 .content form .user-details{
   display: flex;
@@ -93,9 +93,8 @@ form .input-box span.details{
   transition: all 0.3s ease;
 }
  #dot-1:checked ~ .category label .one,
- #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
-   background: #9b59b6;
+ #dot-2:checked ~ .category label .two{
+   background:  #25262e;
    border-color: #d9d9d9;
  }
  form input[type="radio"]{
@@ -116,11 +115,11 @@ form .input-box span.details{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   background: linear-gradient(135deg,  #25262e, black);
  }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(-135deg, #c7940a,black);
   }
  @media(max-width: 584px){
  .container{

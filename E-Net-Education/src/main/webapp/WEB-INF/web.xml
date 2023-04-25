@@ -19,4 +19,26 @@
     <servlet-name>test</servlet-name>
     <url-pattern>/test</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.oop.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Registation</display-name>
+    <servlet-name>Registation</servlet-name>
+    <servlet-class>com.oop.servlet.Registation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registation</servlet-name>
+    <url-pattern>/Registation</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

@@ -81,7 +81,25 @@
     <h1 style="font-size:150px">Exam Bank </h1>
     <p>Get The Best Free Online Exam Experience</p>
     <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-dark" type="button" >Login</button>
+  <button class="btn btn-dark" type="button" onclick="openForm()">Login</button>
+  
+  <div class="form-popup" id="myForm">
+  <form action="" class="form-container" style="opacity:0.9">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <a  class="nav-link active" aria-current="page" href="#">Forgot password?</a>
+    
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
   
 </div>
   </div>
@@ -144,7 +162,15 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
 </body>
 </html>

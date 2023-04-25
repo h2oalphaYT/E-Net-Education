@@ -13,31 +13,32 @@
   <div class="container">
     <div class="title">Registration</div>
     <div class="content">
-      <form action="#">
+    
+      <form action="Registation" method="post">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your name" name="f_name" required>
           </div>
           <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your username" name="l_name" required>
           </div>
           <div class="input-box">
-            <span class="details">Student Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" name="p_number" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="text" placeholder="Enter your password" name="psw" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="text" placeholder="Confirm your password" name="f_name"required>
           </div>
         </div>
         <div class="gender-details">
@@ -54,9 +55,17 @@
             <span class="dot two"></span>
             <span class="gender">Female</span>
           </label>
-         
-          </div>
+          
+           </div>
         </div>
+        
+         <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required>
+  <label class="form-check-label" for="flexCheckIndeterminate" >
+    Agree to <a href="#">Terms & Condition</a>
+  </label>
+</div>
+         
         <div class="button">
           <input type="submit" value="Register">
         </div>

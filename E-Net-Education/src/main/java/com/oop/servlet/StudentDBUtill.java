@@ -3,14 +3,10 @@ package com.oop.servlet;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.util.List;
 
 public class StudentDBUtill {
 		
-	public static List<Student> validate(String Email , String Spassword){
-		return null;
-		
-	}
+
 	
 	public static Statement stmt;
 	

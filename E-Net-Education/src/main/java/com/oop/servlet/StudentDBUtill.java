@@ -6,18 +6,18 @@ import java.sql.DriverManager;
 
 public class StudentDBUtill {
 		
-
+ 
 	
 	public static Statement stmt;
 	
 	
-	public static boolean insertstudent(String fname , String lname,String email,String phone,String psw,String cpsw,String Gender) {
+	public static boolean insertstudent(String name, String l_name, String email, int p_number, String psw, String c_psw, String gender) {
 		
 		boolean isSuccess = false ;
 		
 		
 		
-		//create db connection
+		
 		String url ="jdbc:mysql://localhost:3306/e-net-education" ;
 		String user ="root";
 		String pass = "root";
@@ -27,9 +27,9 @@ public class StudentDBUtill {
 			Class.forName("com.mysql.jdbc.Driver");
 			
 			Connection con = DriverManager.getConnection(url, user, pass);
-			Statement stmt =  (Statement) con.createStatement();
+			stmt =  con.createStatement();
 			
-			String sql = "insert into registration(F_name,L_name,S_email,P_number,Password,Confirm_psw,Gender) values ('"+fname+"','"+lname+"','"+email+"','"+phone+"','"+psw+"','"+cpsw+"','"+Gender+"')";
+			String sql = "insert into registration(F_name,L_name,S_email,P_number,Password,Confirmpsw,Gender) values ('"+name+"','"+l_name+"','"+email+"','"+p_number+"','"+psw+"','"+c_psw+"','"+gender+"')";
 			int rs =  stmt.executeUpdate(sql);
 			
 			if (rs > 0) {

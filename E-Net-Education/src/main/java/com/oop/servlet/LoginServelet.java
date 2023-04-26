@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@webServlet("/LoginServlet")
+@webServlet("/login")
 public class LoginServelet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -29,10 +29,10 @@ public class LoginServelet extends HttpServlet {
 		if (isTrue == true) {
 			List<Student> StdDetails = StudentDBUtill.getStudent(email);
 			request.setAttribute("StdDetails", StdDetails);
-			
-			RequestDispatcher dis = request.getRequestDispatcher("Success.jsp");
+			RequestDispatcher dis = getServletContext().getRequestDispatcher("/StudentProfile.jsp");
 			dis.forward(request, response);
 		} else {
+			System.out.println("error");
 			out.println("<script type='text/javascript'>");
 			out.println("alert('Your username or password is incorrect');");
 			out.println("location='Exam.jsp'");

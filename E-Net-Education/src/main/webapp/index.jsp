@@ -84,7 +84,8 @@
   <button class="btn btn-dark" type="button" onclick="openForm()">Login</button>
   
   <div class="form-popup" id="myForm">
-  <form action="" class="form-container" style="opacity:0.9">
+  
+  <form action="login" method="post" class="form-container" style="opacity:0.9">
     <h1>Login</h1>
 
     <label for="email"><b>Email</b></label>

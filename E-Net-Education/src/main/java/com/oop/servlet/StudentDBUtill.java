@@ -49,7 +49,7 @@ public class StudentDBUtill {
 			
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();			
-			String sql = "select * from regitration where S_email='"+email+"'";
+			String sql = "select * from registration where S_email='"+email+"'";
 			rs = stmt.executeQuery(sql);
 			
 			while (rs.next()) {
@@ -62,9 +62,9 @@ public class StudentDBUtill {
 				String psw = rs.getString(6);
 				String cpsw = rs.getString(7);
 				String Gender = rs.getString(8);
-				
-				Student cus = new Student(fname,lname,stdemail,phone,psw,cpsw,Gender);
-				Student.add(cus);
+				Student std = new Student(fname,lname,stdemail,phone,psw,cpsw,Gender);
+				System.out.println("abc"+std);
+				Student.add(std);
 				
 			}
 			

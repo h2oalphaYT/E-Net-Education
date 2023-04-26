@@ -14,7 +14,7 @@
     <div class="title">Registration</div>
     <div class="content">
     
-      <form action="insert" method="post">
+      <form action="Registration" method="post">
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>

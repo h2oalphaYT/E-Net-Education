@@ -14,7 +14,7 @@
     <div class="title">Registration</div>
     <div class="content">
     
-      <form action="Registation" method="POST">
+      <form action="insert" method="post">
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
@@ -38,7 +38,7 @@
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" name="f_name"required>
+            <input type="text" placeholder="Confirm your password" name="c_psw"required>
           </div>
         </div>
         <div class="gender-details">

@@ -25,6 +25,10 @@
             <input type="text" placeholder="Enter your username" name="l_name" required>
           </div>
           <div class="input-box">
+            <span class="details">UserID</span>
+            <input type="text" placeholder="Enter your userID" name="u_id" required>
+          </div>
+          <div class="input-box">
             <span class="details">Email</span>
             <input type="text" placeholder="Enter your email" name="email" required>
           </div>

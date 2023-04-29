@@ -19,6 +19,7 @@ public class RegistationServelet extends HttpServlet {
 	
 		String name= request.getParameter("f_name");
 		String l_name = request.getParameter("l_name");
+		String userID = request.getParameter("u_id");
 		String email = request.getParameter("email");
 		int p_number = Integer.parseInt(request.getParameter("p_number"));
 		String psw = request.getParameter("psw");
@@ -28,7 +29,7 @@ public class RegistationServelet extends HttpServlet {
 		boolean isTrue;
 		
 		
-		isTrue = StudentDBUtill.insertstudent(name,l_name,email,p_number,psw,c_psw,gender);
+		isTrue = StudentDBUtill.insertstudent(name,l_name,userID,email,p_number,psw,c_psw,gender);
 		 
 		if(isTrue) {
 			 RequestDispatcher dis = request.getRequestDispatcher ("success.jsp");

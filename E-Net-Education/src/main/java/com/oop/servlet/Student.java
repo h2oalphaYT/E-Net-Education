@@ -35,7 +35,9 @@ public class Student {
 		return l_name;
 	}
 
-
+	public String getUserID() {
+		return UserID;
+	}
 
 	public String getEmail() {
 		return email;
@@ -65,9 +67,7 @@ public class Student {
 
 
 
-	public String getUserID() {
-		return UserID;
-	}
+	
 
 
 }

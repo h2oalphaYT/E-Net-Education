@@ -57,13 +57,16 @@ public class StudentDBUtill {
 				
 				String fname = rs.getString(2);
 				String lname = rs.getString(3);
-				String userID =rs.getString(4);
-				String stdemail = rs.getString(5);
-				int phone = rs.getInt(6);
-				String psw = rs.getString(7);
-				String cpsw = rs.getString(8);
-				String Gender = rs.getString(9);
-				Student std = new Student(fname,lname,userID,stdemail,phone,psw,cpsw,Gender);
+				String UserID =rs.getString(9);
+				String stdemail = rs.getString(4);
+				int phone = rs.getInt(5);
+				String psw = rs.getString(6);
+				String cpsw = rs.getString(7);
+				String Gender = rs.getString(8);
+				
+				
+				Student std = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender);
+				
 				System.out.println("abc"+std);
 				Student.add(std);
 				
@@ -81,7 +84,7 @@ public class StudentDBUtill {
 	
 	
 	
-	public static boolean insertstudent(String name, String l_name,String userID, String email, int p_number, String psw, String c_psw, String gender) {
+	public static boolean insertstudent(String name, String l_name,String UserID, String email, int p_number, String psw, String c_psw, String gender) {
 		
 		boolean isSuccess = false ;
 		
@@ -92,7 +95,7 @@ public class StudentDBUtill {
 			con = DBConnect.getConnection();
 			stmt =  con.createStatement();
 			
-			String sql = "insert into registration(F_name,L_name,UserID,S_email,P_number,Password,Confirm_psw,Gender) values ('"+name+"','"+l_name+"','"+userID+"','"+email+"','"+p_number+"','"+psw+"','"+c_psw+"','"+gender+"')";
+			String sql = "insert into registration(F_name,L_name,UserID,S_email,P_number,Password,Confirm_psw,Gender) values ('"+name+"','"+l_name+"','"+UserID+"','"+email+"','"+p_number+"','"+psw+"','"+c_psw+"','"+gender+"')";
 			int rs =  stmt.executeUpdate(sql);
 			
 			if (rs > 0) {

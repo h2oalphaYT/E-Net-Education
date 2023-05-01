@@ -76,62 +76,87 @@
   </div>
 </nav>
 
+ <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Forgot Password</h3>
+                        <p>Verify in the data below.</p>
+                        <form method="post" action="UpdatePassword" class="requires-validation" novalidate>
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="email" placeholder="E-mail Address" required>
+                               <div class="valid-feedback">Email field is valid!</div>
+                               <div class="invalid-feedback">Email field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="userid" placeholder="UserID" required>
+                                 <div class="valid-feedback">UserID field is valid!</div>
+                                 <div class="invalid-feedback">UserID field cannot be blank!</div>
+                            </div>
+
+                           <div class="col-md-12">
+                                <input class="form-control" type="password" name="psw" placeholder="New Password" required>
+                                <div class="valid-feedback">Password field is valid!</div>
+                                <div class="invalid-feedback">Password field cannot be blank!</div>
+                           </div>
 
 
+                           <div class="col-md-12">
+                              <input class="form-control" type="password" name="rpsw" placeholder="Re-Enter Password" required>
+                               <div class="valid-feedback">Password field is valid!</div>
+                               <div class="invalid-feedback">Password field cannot be blank!</div>
+                           </div>
 
 
+                          
 
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label">I confirm that all data are correct</label>
+                         <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                        </div>
+                  
 
-<footer>
-<div class="row primary">
-  <div class="column about">
-    <h3>Connect</h3>
-    <p>
-      <i class="fa fa-map-marker" aria-hidden="true"></i>
-      47/3 Mount Lavinia, Service Road, Colombo.
-    </p>
-    <div class="social">
-      <i class="fa fa-facebook-square"></i>
-      <i class="fa fa-twitter-square"></i>
-      <i class="fa fa-linkedin-square"></i>
-      <i class="fa fa-instagram"></i>
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="column link">
-    <h3>Links</h3>
-    <ul>
-      <li class = "back-nav"><a href="#home">Home</a></li>
-      <li class = "back-nav"><a href="#team">Team</a></li>
-      <li class = "back-nav"><a href="#blogs">Blogs</a></li>
-      <li class = "back-nav"><a href="#support">Support</a></li>
-    </ul>
-  </div>
 
-  <div class="column subscribe">
-    <h6>Providing your children with a batter future</h6>
-    <div>
-      <input type="email" placeholder="Your email id here" />
-      <button>Subscribe</button>
-    </div>
-  </div>
-</div>
 
-<div class="row copyright">
-  <div class="footer-menu">
 
-  <a href="#">Home</a>
-  <a href="#">F.A.Q</a>
-  <a href="#">Cookies Policy</a>
-  <a href="#">Terms Of Service</a>
-  <a href="#">Support</a>
 
-  </div>
-   <p>Copyright &copy; 2023</p>
-</div>
 
-</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+
+(function () {
+	'use strict'
+	const forms = document.querySelectorAll('.requires-validation')
+	Array.from(forms)
+	  .forEach(function (form) {
+	    form.addEventListener('submit', function (event) {
+	      if (!form.checkValidity()) {
+	        event.preventDefault()
+	        event.stopPropagation()
+	      }
+
+	      form.classList.add('was-validated')
+	    }, false)
+	  })
+	})()
+
+</script>
 
 </body>
 </html>

@@ -94,7 +94,7 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
     
-    <a  class="nav-link active" aria-current="page" href="#">Forgot password?</a>
+    <a  class="nav-link active" aria-current="page" href="UpdatePassword.jsp">Forgot password?</a>
     
 
     <button type="submit" class="btn">Login</button>

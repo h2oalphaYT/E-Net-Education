@@ -37,7 +37,7 @@ public class UpdatePasswordservlet extends HttpServlet {
 			List<Student> stdDetails = StudentDBUtill.getStudentpassword(userid);
 			request.setAttribute("stdDetails", stdDetails);
 			
-			RequestDispatcher dis = request.getRequestDispatcher("Success.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("success.jsp");
 			dis.forward(request, response);
 		}
 		else {

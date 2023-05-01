@@ -16,7 +16,6 @@
     <servlet-name>Registration</servlet-name>
     <url-pattern>/Registration</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>UpdatePassword</servlet-name>
     <servlet-class>com.oop.servlet.UpdatePasswordservlet</servlet-class>
@@ -25,5 +24,14 @@
     <servlet-name>UpdatePassword</servlet-name>
     <url-pattern>/UpdatePassword</url-pattern>
   </servlet-mapping>
-
+  <servlet>
+    <description></description>
+    <display-name>DeleteProfileservlet</display-name>
+    <servlet-name>DeleteProfileservlet</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteProfileservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProfileservlet</servlet-name>
+    <url-pattern>/DeleteProfileservlet</url-pattern>
+  </servlet-mapping>
 </web-app>

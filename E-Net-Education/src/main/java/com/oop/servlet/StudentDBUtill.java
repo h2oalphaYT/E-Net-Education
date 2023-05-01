@@ -177,6 +177,34 @@ public static List<Student> getStudentpassword(String userid) {
 	}	
 	return std;	
 }
+
+
+public static boolean deleteProfile(String userid) {
+	
+	
+	
+	try {
+		
+		con = DBConnect.getConnection();
+		stmt = con.createStatement();
+		String sql = "delete from registration where UserID='"+userid+"'";
+		int r = stmt.executeUpdate(sql);
+		
+		if (r > 0) {
+			isSuccess = true;
+		}
+		else {
+			isSuccess = false;
+		}
+		
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+	
+	return isSuccess;
+}
+
 	
 }
 

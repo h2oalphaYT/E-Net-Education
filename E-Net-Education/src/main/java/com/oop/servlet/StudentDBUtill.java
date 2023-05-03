@@ -124,7 +124,7 @@ public static boolean updatePassword( String Email,  String userid, String psw,S
     		
     		con = DBConnect.getConnection();
     		stmt = con.createStatement();
-    		String sql = "update customer set Password='"+psw+"'"  + "where UserID='"+userid+"' and S_email='"+Email+"'";
+    		String sql = "update registration set Password='"+psw+"'where UserID='"+userid+"' and S_email='"+Email+"'";
     				
     		int rs = stmt.executeUpdate(sql);
     		
@@ -180,8 +180,6 @@ public static List<Student> getStudentpassword(String userid) {
 
 
 public static boolean deleteProfile(String userid) {
-	
-	
 	
 	try {
 		

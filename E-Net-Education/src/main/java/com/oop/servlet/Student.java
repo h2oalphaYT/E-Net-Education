@@ -21,6 +21,7 @@ public class Student {
 		this.psw = psw;
 		this.c_psw = c_psw;
 		this.gender = gender;
+		this.UserID = UserID;
 	}
 
 	

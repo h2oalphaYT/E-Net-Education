@@ -10,9 +10,10 @@ public class Student {
 	private String psw ;
 	private String c_psw;
 	private String gender;
+	private String position;
 	
 	
-	public Student(String name, String l_name,String UserID, String email, int p_number, String psw, String c_psw, String gender) {
+	public Student(String name, String l_name,String UserID, String email, int p_number, String psw, String c_psw, String gender, String position) {
 		
 		this.name = name;
 		this.l_name = l_name;
@@ -21,6 +22,8 @@ public class Student {
 		this.psw = psw;
 		this.c_psw = c_psw;
 		this.gender = gender;
+		this.UserID = UserID;
+		this.position = position;
 	}
 
 	
@@ -62,6 +65,20 @@ public class Student {
 
 	public String getGender() {
 		return gender;
+	}
+
+
+
+
+	public String getPosition() {
+		return position;
+	}
+
+
+
+
+	public void setPosition(String position) {
+		this.position = position;
 	}
 
 

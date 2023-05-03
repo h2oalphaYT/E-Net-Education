@@ -15,10 +15,8 @@
 <body>
 
 
-	<%List<Student> StdDetails = (List<Student>)request.getAttribute("StdDetails"); %>
+	<%Student std = (Student)request.getAttribute("StdDetails"); %>
 	
-	<%for(int i=0; i < StdDetails.size(); i++){ 
-	Student std = StdDetails.get(i);%>
 		
     
     
@@ -101,8 +99,8 @@
             
             <div class="d-flex justify-content-center mb-2">
             
-              <button type="button" class="btn btn-primary">Edit Account</button>
-              <button type="button" class="btn btn-outline-primary ms-1">Delete Account</button>
+             <a href="#"> <button type="button" class="btn btn-primary ">Edit Account</button></a>
+               <a><button type="button" class="btn btn-outline-primary ms-1" onclick="DeleteAccount('<%=std.getUserID()%>')">Delete Account</button></a>
             </div>
           </div>
         </div>
@@ -255,7 +253,6 @@
  
 </section>
 
-<%} %>
 
 <footer>
 <div class="row primary">
@@ -308,7 +305,14 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+function DeleteAccount(id){
+	if(confirm("Are you sure you want to Delete Your Account")){
+		window.location.href ="DeleteProfileservlet?id=" + id;
+	}
+}
 
+</script>
 
 
 </body>

@@ -37,12 +37,8 @@ public class StudentDBUtill {
 		return isSuccess;
 	}
 	
-	public static List<Student> getStudent(String email) {
-		
-		ArrayList<Student> Student = new ArrayList<>();
-		
-		
-		
+	public static Student getStudent(String email) {	
+		Student std = null;
 		try {
 			
 			Class.forName("com.mysql.jdbc.Driver");
@@ -63,12 +59,12 @@ public class StudentDBUtill {
 				String psw = rs.getString(6);
 				String cpsw = rs.getString(7);
 				String Gender = rs.getString(8);
+				String Pos = rs.getString(10);
 				
 				
-				Student std = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender);
+				std = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender,Pos);
 				
 				System.out.println("abc"+std);
-				Student.add(std);
 				
 			}
 			
@@ -76,7 +72,7 @@ public class StudentDBUtill {
 			
 		}
 		
-		return Student;	
+		return std;	
 	}
 	
 	
@@ -118,4 +114,93 @@ public class StudentDBUtill {
 		
 	}
 	
+public static boolean updatePassword( String Email,  String userid, String psw,String Rpsw) {
+    	
+    	try {
+    		
+    		con = DBConnect.getConnection();
+    		stmt = con.createStatement();
+    		String sql = "update registration set Password='"+psw+"'where UserID='"+userid+"' and S_email='"+Email+"'";
+    				
+    		int rs = stmt.executeUpdate(sql);
+    		
+    		if(rs > 0) {
+    			isSuccess = true;
+    		}
+    		else {
+    			isSuccess = false;
+    		}
+    		
+    	}
+    	catch(Exception e) {
+    		e.printStackTrace();
+    	}
+    	
+    	return isSuccess;
+    }
+
+
+public static List<Student> getStudentpassword(String userid) {
+	
+	
+	
+	ArrayList<Student> std = new ArrayList<>();
+	
+	try {
+		
+		con = DBConnect.getConnection();
+		stmt = con.createStatement();
+		String sql = "select * from registration where UserID='"+userid+"'";
+		rs = stmt.executeQuery(sql);
+		
+		while(rs.next()) {
+			String fname = rs.getString(2);
+			String lname = rs.getString(3);
+			String UserID =rs.getString(9);
+			String stdemail = rs.getString(4);
+			int phone = rs.getInt(5);
+			String psw = rs.getString(6);
+			String cpsw = rs.getString(7);
+			String Gender = rs.getString(8);
+			String Pos = rs.getString(10);
+			
+			Student c = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender,Pos);
+			std.add(c);
+		}
+		
+	}
+	catch(Exception e) {
+		e.printStackTrace();
+	}	
+	return std;	
 }
+
+
+public static boolean deleteProfile(String userid) {
+	
+	try {
+		
+		con = DBConnect.getConnection();
+		stmt = con.createStatement();
+		String sql = "delete from registration where UserID='"+userid+"'";
+		int r = stmt.executeUpdate(sql);
+		
+		if (r > 0) {
+			isSuccess = true;
+		}
+		else {
+			isSuccess = false;
+		}
+		
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+	
+	return isSuccess;
+}
+
+	
+}
+
+

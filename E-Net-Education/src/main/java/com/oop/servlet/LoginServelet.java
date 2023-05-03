@@ -27,10 +27,19 @@ public class LoginServelet extends HttpServlet {
 		isTrue = StudentDBUtill.validate(email, psw);
 		
 		if (isTrue == true) {
-			List<Student> StdDetails = StudentDBUtill.getStudent(email);
+			Student StdDetails = StudentDBUtill.getStudent(email);
 			request.setAttribute("StdDetails", StdDetails);
-			RequestDispatcher dis = getServletContext().getRequestDispatcher("/StudentProfile.jsp");
+			
+			RequestDispatcher dis = null;
+			System.out.println(StdDetails.getPosition());
+			if(StdDetails.getPosition().equals("Admin")) {
+				dis = getServletContext().getRequestDispatcher("/AdminPortal.jsp");
+			}
+			else {
+				dis = getServletContext().getRequestDispatcher("/StudentProfile.jsp");
+			}
 			dis.forward(request, response);
+			
 		} else {
 			System.out.println("error");
 			out.println("<script type='text/javascript'>");

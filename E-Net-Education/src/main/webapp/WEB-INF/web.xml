@@ -34,4 +34,14 @@
     <servlet-name>DeleteProfileservlet</servlet-name>
     <url-pattern>/DeleteProfileservlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StaffInsert</display-name>
+    <servlet-name>StaffInsert</servlet-name>
+    <servlet-class>com.oop.servlet.StaffInsert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StaffInsert</servlet-name>
+    <url-pattern>/StaffInsert</url-pattern>
+  </servlet-mapping>
 </web-app>

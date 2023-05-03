@@ -59,9 +59,10 @@ public class StudentDBUtill {
 				String psw = rs.getString(6);
 				String cpsw = rs.getString(7);
 				String Gender = rs.getString(8);
+				String Pos = rs.getString(10);
 				
 				
-				std = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender);
+				std = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender,Pos);
 				
 				System.out.println("abc"+std);
 				
@@ -161,8 +162,9 @@ public static List<Student> getStudentpassword(String userid) {
 			String psw = rs.getString(6);
 			String cpsw = rs.getString(7);
 			String Gender = rs.getString(8);
+			String Pos = rs.getString(10);
 			
-			Student c = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender);
+			Student c = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender,Pos);
 			std.add(c);
 		}
 		

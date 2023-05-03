@@ -100,7 +100,7 @@
             <div class="d-flex justify-content-center mb-2">
             
              <a href="#"> <button type="button" class="btn btn-primary ">Edit Account</button></a>
-               <button type="button" class="btn btn-outline-primary ms-1" onclick="DeleteAccount('<%=std.getUserID()%>')">Delete Account</button>
+               <a><button type="button" class="btn btn-outline-primary ms-1" onclick="DeleteAccount('<%=std.getUserID()%>')">Delete Account</button></a>
             </div>
           </div>
         </div>

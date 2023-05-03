@@ -27,7 +27,7 @@ public class LoginServelet extends HttpServlet {
 		isTrue = StudentDBUtill.validate(email, psw);
 		
 		if (isTrue == true) {
-			List<Student> StdDetails = StudentDBUtill.getStudent(email);
+			Student StdDetails = StudentDBUtill.getStudent(email);
 			request.setAttribute("StdDetails", StdDetails);
 			RequestDispatcher dis = getServletContext().getRequestDispatcher("/StudentProfile.jsp");
 			dis.forward(request, response);

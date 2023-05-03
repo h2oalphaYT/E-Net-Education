@@ -37,12 +37,8 @@ public class StudentDBUtill {
 		return isSuccess;
 	}
 	
-	public static List<Student> getStudent(String email) {
-		
-		ArrayList<Student> Student = new ArrayList<>();
-		
-		
-		
+	public static Student getStudent(String email) {	
+		Student std = null;
 		try {
 			
 			Class.forName("com.mysql.jdbc.Driver");
@@ -65,10 +61,9 @@ public class StudentDBUtill {
 				String Gender = rs.getString(8);
 				
 				
-				Student std = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender);
+				std = new Student(fname,lname,UserID,stdemail,phone,psw,cpsw,Gender);
 				
 				System.out.println("abc"+std);
-				Student.add(std);
 				
 			}
 			
@@ -76,7 +71,7 @@ public class StudentDBUtill {
 			
 		}
 		
-		return Student;	
+		return std;	
 	}
 	
 	

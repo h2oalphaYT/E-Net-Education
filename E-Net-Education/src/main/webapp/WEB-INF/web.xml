@@ -44,4 +44,14 @@
     <servlet-name>StaffInsert</servlet-name>
     <url-pattern>/StaffInsert</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoadStudentProfileservlet</display-name>
+    <servlet-name>LoadStudentProfileservlet</servlet-name>
+    <servlet-class>com.oop.servlet.LoadStudentProfileservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadStudentProfileservlet</servlet-name>
+    <url-pattern>/LoadStudentProfileservlet</url-pattern>
+  </servlet-mapping>
 </web-app>

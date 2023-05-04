@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>E-Net Education</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -45,7 +45,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">About Exams</a></li>
-            <li><a class="dropdown-item" href="#">hithanna danna ekak</a></li>
+            <li><a class="dropdown-item" href="#">About System</a></li>
            
           </ul>
         </li>
@@ -55,7 +55,7 @@
                 
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li>
-                        <a class="dropdown-item" href="#">My account</a>
+                        <a class="dropdown-item" href="">My account</a>
                     </li>
 
                     <li>
@@ -81,30 +81,14 @@
     <h1 style="font-size:150px">Exam Bank </h1>
     <p>Get The Best Free Online Exam Experience</p>
     <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-dark" type="button" onclick="openForm()">Login</button>
+  <a href="Login.jsp"><button class="btn btn-dark" type="button" >Login</button></a>
   
-  <div class="form-popup" id="myForm">
-  
-  <form action="login" method="post" class="form-container" style="opacity:0.9">
-    <h1>Login</h1>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    
-    <a  class="nav-link active" aria-current="page" href="UpdatePassword.jsp">Forgot password?</a>
-    
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
+ 
 </div>
   
 </div>
   </div>
-</div>
+
 
 
 
@@ -161,8 +145,8 @@
 </footer>
 
 
+<script src="js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script>
 function openForm() {
   document.getElementById("myForm").style.display = "block";

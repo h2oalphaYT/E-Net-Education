@@ -5,6 +5,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -16,6 +18,7 @@ public class LoginServelet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		HttpSession session = request.getSession();
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
 		
@@ -29,6 +32,7 @@ public class LoginServelet extends HttpServlet {
 		if (isTrue == true) {
 			Student StdDetails = StudentDBUtill.getStudent(email);
 			request.setAttribute("StdDetails", StdDetails);
+			session.setAttribute("StdDetails", StdDetails);
 			
 			RequestDispatcher dis = null;
 			System.out.println(StdDetails.getPosition());
@@ -36,7 +40,7 @@ public class LoginServelet extends HttpServlet {
 				dis = getServletContext().getRequestDispatcher("/AdminPortal.jsp");
 			}
 			else {
-				dis = getServletContext().getRequestDispatcher("/StudentProfile.jsp");
+				dis = getServletContext().getRequestDispatcher("/StudentPortal.jsp");
 			}
 			dis.forward(request, response);
 			
@@ -44,7 +48,7 @@ public class LoginServelet extends HttpServlet {
 			System.out.println("error");
 			out.println("<script type='text/javascript'>");
 			out.println("alert('Your username or password is incorrect');");
-			out.println("location='Exam.jsp'");
+			out.println("location='Login.jsp'");
 			out.println("</script>");
 		}
 		

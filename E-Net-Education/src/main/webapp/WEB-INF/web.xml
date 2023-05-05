@@ -54,4 +54,14 @@
     <servlet-name>LoadStudentProfileservlet</servlet-name>
     <url-pattern>/LoadStudentProfileservlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateProfileservlet</display-name>
+    <servlet-name>UpdateProfileservlet</servlet-name>
+    <servlet-class>com.oop.servlet.UpdateProfileservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProfileservlet</servlet-name>
+    <url-pattern>/UpdateProfileservlet</url-pattern>
+  </servlet-mapping>
 </web-app>

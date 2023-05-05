@@ -28,11 +28,11 @@
 	</tr>
 	<tr>
 		<td>User ID</td>
-		<td><input type="text" name="phone" value="<%=std.getP_number() %>"></td>
+		<td><input type="text" name="phone" value="<%=std.getUserID()%>" readonly></td>
 	</tr>
 	<tr>
 		<td>Phone number</td>
-		<td><input type="text" name="uname" value="<%=std.getGender() %>"></td>
+		<td><input type="text" name="uname" value="<%=std.getP_number() %>"></td>
 	</tr>
 			
 	</table>

@@ -64,4 +64,14 @@
     <servlet-name>UpdateProfileservlet</servlet-name>
     <url-pattern>/UpdateProfileservlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Updatestaffinfoservlet</display-name>
+    <servlet-name>Updatestaffinfoservlet</servlet-name>
+    <servlet-class>com.oop.servlet.Updatestaffinfoservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Updatestaffinfoservlet</servlet-name>
+    <url-pattern>/Updatestaffinfoservlet</url-pattern>
+  </servlet-mapping>
 </web-app>

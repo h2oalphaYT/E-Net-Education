@@ -5,6 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Staff Details</title>
+<link rel ="stylesheet" type="text/css" href="staffdetail.css">
+<link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 
@@ -34,8 +36,8 @@
       <td>lecturer</td>
       <td>LIC2000</td>
       <td>kamal89</td>
-      <td><button class="btn btn-success">EDIT</button></td>
-      <td><button class="btn btn-danger">DELETE</button></td>
+      <td><button class="button button 1">EDIT</button></td>
+      <td><button class="button button 2">DELETE</button></td>
       </tr>
       
    </table>

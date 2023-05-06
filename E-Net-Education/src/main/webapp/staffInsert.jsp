@@ -72,6 +72,13 @@
   </div>
 </nav>
 
+<div class="form_wrapper">
+<div class="form_container">
+<div class="title_container">
+<h2>Insert Staff Details</h2></div>
+<div class="row clearfix">
+<div class="">
+
    <form action="StaffInsert" method="post">
         First Name <input type="text" name="f_name"><br>
         Last Name <input type="text" name="l_name"><br>
@@ -79,10 +86,15 @@
         Phone Number <input type="text" name="phone"><br>
         Position <input type="text" name="position"><br>
         user name <input type="text" name="uid"><br>
-        password <input type="password" name="psw"><br>
+        password <input type="password" class="fa fa-lock" name="psw"><br>
         
         <input type="submit" name="submit" value="add staff">
    </form>
+   </div>
+   </div>
+   </div>
+   </div>
+
    
    <footer>
 <div class="row primary">

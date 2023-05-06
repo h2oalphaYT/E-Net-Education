@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Update admin information</title>
+<title>Update information</title>
 </head>
 <body>
 
@@ -20,14 +20,11 @@
        Last Name<input type="text" name="l_name" value="" ><br>
        Email <input type="text" name="email" value="" ><br>
        Contact no<input type="text" name="contactno" value=""><br>
-Position<input type="text" name="position" value="" ><br>
-User name<input type="text" name="username" value=""><br>
-Password <input type="password" name="password" value=""><br>
-
-<input type="submit" name="submit" value="Update staff member">
-
-
-
+       Position<input type="text" name="position" value="" ><br>
+       User name<input type="text" name="username" value=""><br>
+       Password <input type="password" name="password" value=""><br>
+<br>
+       <input type="submit" name="submit" value="Update information">
 
 </form>
 

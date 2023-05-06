@@ -12,7 +12,7 @@
 
 <%Student std = (Student)session.getAttribute("StdDetails"); %>	
 
-	<form action="#" method="post">
+	<form action="UpdateProfileservlet" method="post">
 	<table>
 		<tr>
 			<td>First Name</td>
@@ -20,7 +20,7 @@
 		</tr>
 		<tr>
 			<td>Last Name</td>
-			<td><input type="text" name="fname" value="<%=std.getL_name() %>"></td>
+			<td><input type="text" name="lname" value="<%=std.getL_name() %>"></td>
 		</tr>
 		<tr>
 		<td>Email</td>
@@ -28,11 +28,11 @@
 	</tr>
 	<tr>
 		<td>User ID</td>
-		<td><input type="text" name="phone" value="<%=std.getUserID()%>" readonly></td>
+		<td><input type="text" name="userid" value="<%=std.getUserID()%>" readonly></td>
 	</tr>
 	<tr>
 		<td>Phone number</td>
-		<td><input type="text" name="uname" value="<%=std.getP_number() %>"></td>
+		<td><input type="text" name="phone" value="<%=std.getP_number() %>"></td>
 	</tr>
 			
 	</table>

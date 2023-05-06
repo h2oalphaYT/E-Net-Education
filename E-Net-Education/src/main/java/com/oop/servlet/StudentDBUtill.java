@@ -139,6 +139,31 @@ public static boolean updatePassword( String Email,  String userid, String psw,S
     	return isSuccess;
     }
 
+public static boolean updateProfile( String fname ,  String lname, String email,String phone ,String userid) {
+	
+	try {
+		
+		con = DBConnect.getConnection();
+		stmt = con.createStatement();
+		String sql = "update registration set F_name='"+fname+"', L_name='"+lname+"', S_email='"+email+"',P_number='"+phone+"' where UserID='"+userid+"'";
+				
+		int rs = stmt.executeUpdate(sql);
+		
+		if(rs > 0) {
+			isSuccess = true;
+		}
+		else {
+			isSuccess = false;
+		}
+		
+	}
+	catch(Exception e) {
+		e.printStackTrace();
+	}
+	
+	return isSuccess;
+}
+
 
 public static List<Student> getStudentpassword(String userid) {
 	

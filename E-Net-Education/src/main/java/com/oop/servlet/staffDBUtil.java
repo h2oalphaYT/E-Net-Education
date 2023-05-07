@@ -13,6 +13,7 @@ public class staffDBUtil {
 	private static Connection con = null;
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
+	private static boolean isSuccess;
 	
 	public static List<staff> validate(String username, String password){
 		ArrayList<staff> stf = new ArrayList<>();
@@ -71,6 +72,32 @@ public class staffDBUtil {
 	   	 }
 		
 		return isSuccess;
+	}
+
+	public static boolean updateStaff(String fname, String lname, String email, String phone, String position,String username, String password) {
+		
+		try {
+			con = DBConnect.getConnection();
+			stmt = con.createStatement();
+			String sql ="update staff set F_name='"+fname+"', L_name='"+lname+"', S_email='"+email+"',P_number='"+phone+"',Position='"+position+"' where UserID='"+username+"'";
+			
+			int rs = stmt.executeUpdate(sql);
+			
+			if(rs>0) {
+				isSuccess= true;
+			}
+			else {
+				isSuccess= false;
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+			
+		
+		
+		return isSuccess;
+	
 	}
 
 }

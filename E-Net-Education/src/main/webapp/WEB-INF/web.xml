@@ -74,4 +74,14 @@
     <servlet-name>Updatestaffinfoservlet</servlet-name>
     <url-pattern>/Updatestaffinfoservlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteStaffInfoServlet</display-name>
+    <servlet-name>DeleteStaffInfoServlet</servlet-name>
+    <servlet-class>com.oop.servlet.DeleteStaffInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteStaffInfoServlet</servlet-name>
+    <url-pattern>/DeleteStaffInfoServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

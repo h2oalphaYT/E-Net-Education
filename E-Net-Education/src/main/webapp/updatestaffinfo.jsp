@@ -10,8 +10,6 @@
 
    <%
        String id = request.getParameter("id");
-       
-       
    %>
 
 <form action="" method="post">

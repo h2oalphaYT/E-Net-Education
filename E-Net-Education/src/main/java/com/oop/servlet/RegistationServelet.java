@@ -34,7 +34,7 @@ public class RegistationServelet extends HttpServlet {
 		isTrue = StudentDBUtill.insertstudent(name,l_name,userID,email,p_number,psw,c_psw,gender);
 		 
 		if(isTrue) {
-			 RequestDispatcher dis = request.getRequestDispatcher ("success.jsp");
+			 RequestDispatcher dis = request.getRequestDispatcher ("Login.jsp");
 			 dis.forward(request, response);
 			 
 			 

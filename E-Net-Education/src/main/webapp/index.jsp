@@ -5,7 +5,10 @@
 
 <head>
 <meta charset="ISO-8859-1">
-<title>E-Net Education</title>
+<title>
+E-Net Education
+</title>
+<link rel="icon" type="images/x-icon" href="images/logo.png">
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

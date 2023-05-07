@@ -6,6 +6,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -17,6 +19,8 @@ public class UpdateProfileservlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
+		HttpSession session = request.getSession();
+		
 		String fname = request.getParameter("name");
 		String lname = request.getParameter("lname");
 		String email = request.getParameter("email");
@@ -29,16 +33,16 @@ public class UpdateProfileservlet extends HttpServlet {
 		
 		if(isTrue == true) {
 			
-			List<Student> stdDetails = StudentDBUtill.getStudentpassword(userid);
-			request.setAttribute("stdDetails", stdDetails);
+			Student stdDetails = StudentDBUtill.getStudent(email);
+			session.setAttribute("StdDetails", stdDetails);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("StudentProfile.jsp");
 			dis.forward(request, response);
 		}
 		else {
 			
-			List<Student> stdDetails = StudentDBUtill.getStudentpassword(userid);
-			request.setAttribute("stdDetails", stdDetails);
+			Student stdDetails = StudentDBUtill.getStudent(email);
+			session.setAttribute("StdDetails", stdDetails);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");
 			dis.forward(request, response);

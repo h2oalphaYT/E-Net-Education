@@ -12,28 +12,24 @@ import java.util.ArrayList;
 public class Updatestaffinfoservlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
  
-	protected void doPost1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String Fname = request.getParameter("f_name");
-    	String Lname = request.getParameter("l_name");
+		String Fname = request.getParameter("name");
+    	String Lname = request.getParameter("lname");
     	String email= request.getParameter("email");
-    	String phone = request.getParameter("contactno");
+    	String phone = request.getParameter("phone");
     	String position = request.getParameter("position");
-    	String username= request.getParameter("username");
-    	String password= request.getParameter("password");
+    	String username= request.getParameter("userid");
+    	
     	
     	boolean isTrue;
     	
-    	isTrue = staffDBUtil.updateStaff(Fname,Lname, email, phone, position, username, password);
+    	isTrue = staffDBUtil.updateStaff(Fname,Lname, email, phone, position, username);
     	
     	if(isTrue==true) {
 
-    		ArrayList<staff> stafflist =  staffDBUtil.getstaffDetails();
+    		
     		RequestDispatcher dis= request.getRequestDispatcher("success.jsp");
     		dis.forward(request, response);
     	}

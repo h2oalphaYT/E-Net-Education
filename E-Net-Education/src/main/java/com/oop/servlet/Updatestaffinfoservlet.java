@@ -34,9 +34,6 @@ public class Updatestaffinfoservlet extends HttpServlet {
     	if(isTrue==true) {
     		
     		
-    		
-  
-    		
     		RequestDispatcher dis= request.getRequestDispatcher("AdminPortal.jsp");
     		dis.forward(request, response);
     	}

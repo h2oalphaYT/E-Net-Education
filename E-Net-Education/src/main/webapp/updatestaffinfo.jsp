@@ -19,7 +19,7 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
 </head>
 <body>
 
- <% staff Staff = (staff)request.getAttribute("StaffDetails"); %>
+ <%staff Staff = (staff)request.getAttribute("StaffDetails");%>
    
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
@@ -90,14 +90,15 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
   <h2 class="text-center text-dark">Update Staff Details</h2>
   <div class="row">
     <div class="col-sm-5">
-        <div class="card-body text-center">
-            <img src="images/av3.png" alt="avatar"
-              class="rounded-circle img-fluid" style="width: 150px;">
+        <div class="card-body text-center"> 
+        <img src="images/av3.png" alt="avatar" class="rounded-circle img-fluid" style="width: 150px">
             <h5 class="my-3"><%=Staff.getF_name() %> <%=Staff.getL_name() %></h5>
             <p class="text-muted mb-1"><%=Staff.getPassword() %> </p>
           <p class="text-muted mb-4"><%=Staff.getEmail()%></p>
            </div> 
     </div>
+    
+    
     <div class="col-sm-7">
       <div class="row">
         <div class="col-sm-6 form-group">
@@ -175,7 +176,7 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
 <div class="row copyright">
   <div class="footer-menu">
 
-  <a href="StudentPortal.jsp">Home</a>
+  <a href="#">Home</a>
   <a href="#">F.A.Q</a>
   <a href="#">Cookies Policy</a>
   <a href="#">Terms Of Service</a>
@@ -187,11 +188,6 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
 
 </footer>
 
-
-
-
-
-	
 
 
 <script src="js/bootstrap.bundle.min.js"></script>

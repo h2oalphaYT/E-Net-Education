@@ -6,6 +6,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -14,6 +16,8 @@ public class Updatestaffinfoservlet extends HttpServlet {
  
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
 		
 		String Fname = request.getParameter("name");
     	String Lname = request.getParameter("lname");
@@ -28,9 +32,12 @@ public class Updatestaffinfoservlet extends HttpServlet {
     	isTrue = staffDBUtil.updateStaff(Fname,Lname, email, phone, position, username);
     	
     	if(isTrue==true) {
-
     		
-    		RequestDispatcher dis= request.getRequestDispatcher("success.jsp");
+    		
+    		
+  
+    		
+    		RequestDispatcher dis= request.getRequestDispatcher("AdminPortal.jsp");
     		dis.forward(request, response);
     	}
     	else {

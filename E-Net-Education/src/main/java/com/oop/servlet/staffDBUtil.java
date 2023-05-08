@@ -76,7 +76,7 @@ public class staffDBUtil {
 		return isSuccess;
 	}
 	
-	public static staff getStudent(String userid) {	
+	public static staff getStaff(String userid) {	
 		staff stf = null;
 		try {
 			
@@ -117,7 +117,7 @@ public class staffDBUtil {
 		try {
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql ="update staff set F_name='"+fname+"', L_name='"+lname+"', S_email='"+email+"',P_number='"+phone+"',Position='"+position+"' where UserID='"+username+"'";
+			String sql ="update staff set f_name='"+fname+"', l_name='"+lname+"', email='"+email+"',contactno='"+phone+"',position='"+position+"' where username='"+username+"'";
 			
 			int rs = stmt.executeUpdate(sql);
 			

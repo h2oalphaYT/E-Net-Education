@@ -18,7 +18,7 @@ public class EditstaffProfile extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
 		
-		staff Staff = staffDBUtil.getStudent(id);
+		staff Staff = staffDBUtil.getStaff(id);
 		
 		request.setAttribute("StaffDetails", Staff);
 

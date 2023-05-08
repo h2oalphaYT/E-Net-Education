@@ -1,3 +1,5 @@
+<%@page import="com.oop.servlet.staff"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
@@ -11,7 +13,8 @@
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 
-
+<body>
+<jsp:include page="/ShowStaffservlet"></jsp:include>
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">E-Net Education</a>
@@ -84,7 +87,6 @@
 
 <table class="table" border="1" style="border-collapse:collapse" >
    <tr>
-      <th>ID</th>
       <th>First Name</th>
       <th>Last Name</th>
       <th>Email</th>
@@ -95,10 +97,20 @@
       <th class="table-info">Edit</th>
       <th class="table-info">Delete</th>
    </tr>
+   <% ArrayList<staff> stfDetails = new ArrayList<staff>();
+   stfDetails = (ArrayList<staff>)request.getAttribute("StaffList"); %>
+   
+  <%for(int i=0 ; i<stfDetails.size();i++){
+	  staff Staff = stfDetails.get(i); %> 
+  
+   
+   
+   
+   
+  
    
    <tr>
-      <td>1</td>
-      <td>Kamal</td>
+      <td><%=Staff.getF_name() %></td>
       <td>Silva</td>
       <td>kamal@ENETlecturer.lk</td>
       <td>0771234567</td>
@@ -108,6 +120,7 @@
       <td><a href="updatestaffinfo.jsp"><button class="button button 1">EDIT</button></a></td>
       <td><a href="updatestaffinfo.jsp"><button class="button button 2">DELETE</button></a></td>
       </tr>
+      <%} %>
       
    </table>
    </div>

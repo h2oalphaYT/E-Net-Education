@@ -15,29 +15,32 @@ public class staffDBUtil {
 	private static ResultSet rs = null;
 	private static boolean isSuccess;
 	
-	public static List<staff> validate(String username, String password){
-		ArrayList<staff> stf = new ArrayList<>();
-	   	 
-	   
-	   	 //validating
+
+	public static staff getstaff(String username) {
+		staff stf = null;
 	   	 
 	   	 try {
+	   		 
+	   		Class.forName("com.mysql.jdbc.Driver");
+	   		
 	   		 con = DBConnect.getConnection();
 	   		 stmt = con.createStatement();
-	   		 String sql = "select * from staff where username='"+username+"' and password='"+password+"'";
+	   		 String sql = "select * from staff where username='"+username+"'" ;
 	         rs = stmt.executeQuery(sql);
 	   		 
-	   		 if(rs.next()) {
-	   			 int id= rs.getInt(1);
+	   		 while(rs.next()) {
+	   			
 	   			 String name= rs.getString(2);
-	   			 String email=rs.getString(3);
-	   			 String contactno = rs.getString(4);
-	   			 String position = rs.getString(5);
-	   			 String userU = rs.getString(6);
-	   			 String passU = rs.getString(7);
+	   			String lname= rs.getString(3);
 	   			 
-	   			 staff s =  new staff(id, name, email, contactno, position, userU, passU);
-	   			 stf.add(s);
+	   			 String email=rs.getString(4);
+	   			 String contactno = rs.getString(5);
+	   			 String position = rs.getString(6);
+	   			 String userU = rs.getString(7);
+	   			 String passU = rs.getString(8);
+	   			 
+	   			stf =  new staff( name,lname, email, contactno, position, userU, passU);
+	   			System.out.println("abc"+stf);
 	   		 }
 	   	 }
 	   	 catch(Exception e) {
@@ -57,7 +60,7 @@ public class staffDBUtil {
 	   		 con = DBConnect.getConnection();
 	   		 stmt = con.createStatement();
      		 String sql="insert into staff (f_name,l_name,email,contactno,position,username,password) values('"+Fname+"','"+Lname+"','"+email+"','"+contactno+"','"+position+"','"+username+"','"+password+"')";
-	   		 System.out.println(sql);
+	   		 
 	   		 int rs= stmt.executeUpdate(sql);
 	   		 if(rs>0) {
 	   			 isSuccess= true;
@@ -79,7 +82,7 @@ public class staffDBUtil {
 		try {
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql ="update staff set F_name='"+fname+"', L_name='"+lname+"', S_email='"+email+"',P_number='"+phone+"',Position='"+position+"' where UserID='"+username+"'";
+			String sql ="update staff set f_name='"+fname+"', l_name='"+lname+"', email='"+email+"',contactno='"+phone+"',position='"+position+"' where username='"+username+"'";
 			
 			int rs = stmt.executeUpdate(sql);
 			

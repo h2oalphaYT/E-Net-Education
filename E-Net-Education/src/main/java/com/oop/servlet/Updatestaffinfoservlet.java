@@ -17,19 +17,22 @@ public class Updatestaffinfoservlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		String Fname = request.getParameter("f_name");
     	String Lname = request.getParameter("l_name");
     	String email= request.getParameter("email");
-    	String phone = request.getParameter("phone");
+    	String phone = request.getParameter("contactno");
     	String position = request.getParameter("position");
-    	String username= request.getParameter("uid");
-    	String password= request.getParameter("psw");
+    	String username= request.getParameter("username");
+    	String password= request.getParameter("password");
     	
     	boolean isTrue;
     	
     	isTrue = staffDBUtil.updateStaff(Fname,Lname, email, phone, position, username, password);
     	
     	if(isTrue==true) {
+    		
+    		staff staffDetails = staffDBUtil.getstaff(username);
     		RequestDispatcher dis= request.getRequestDispatcher("success.jsp");
     		dis.forward(request, response);
     	}

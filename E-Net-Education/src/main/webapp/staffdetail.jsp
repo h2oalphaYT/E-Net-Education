@@ -111,11 +111,13 @@
       <td><%=Staff.getPosition() %></td>
       <td><%=Staff.getEmail() %></td>
       <td><%=Staff.getUsername() %></td>
-      <td><%=Staff .getPassword()%></td>
+      <td><%=Staff.getPassword() %></td>
       
       <td><a href="updatestaffinfo.jsp"><button class="button button 1">EDIT</button></a></td>
       <td><a href=""><button class="button button 2">DELETE</button></a></td>
      </tr>
+     
+     <% }%>
    </table>
    </div>
    </div>

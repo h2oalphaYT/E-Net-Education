@@ -75,6 +75,42 @@ public class staffDBUtil {
 		
 		return isSuccess;
 	}
+	
+	public static staff getStudent(String userid) {	
+		staff stf = null;
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			con = DBConnect.getConnection();
+			stmt = con.createStatement();			
+			String sql = "select * from staff where username='"+userid+"'";
+			rs = stmt.executeQuery(sql);
+			
+			while (rs.next()) {
+				
+				
+				String fname = rs.getString(2);
+				String lname = rs.getString(3);
+				String UserID =rs.getString(7);
+				String stfemail = rs.getString(4);
+				String phone = rs.getString(5);
+				String Pos = rs.getString(6);
+				String psw = rs.getString(8);
+				
+				
+				stf = new staff(fname,lname,UserID,stfemail,phone,psw,Pos);
+				
+				System.out.println("abc"+stf);
+				
+			}
+			
+		} catch (Exception e) {
+			
+		}
+		
+		return stf;	
+	}
 
 	public static boolean updateStaff(String fname, String lname, String email, String phone, String position,String username) {
 		

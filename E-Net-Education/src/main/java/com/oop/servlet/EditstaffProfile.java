@@ -1,5 +1,6 @@
 package com.oop.servlet;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -12,21 +13,23 @@ public class EditstaffProfile extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     
-    public EditstaffProfile() {
-        super();
-       
-    }
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String id = request.getParameter("id");
 		
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		staff Staff = staffDBUtil.getStudent(id);
+		
+		request.setAttribute("StaffDetails", Staff);
+
+		RequestDispatcher dis = request.getRequestDispatcher("updatestaffinfo.jsp");
+		dis.forward(request, response);
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		doGet(request, response);
+		
 	}
 
 }

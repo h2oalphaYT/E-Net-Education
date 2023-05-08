@@ -94,8 +94,8 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
             <img src="images/av3.png" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;">
             <h5 class="my-3"><%=Staff.getF_name() %> <%=Staff.getL_name() %></h5>
-            <p class="text-muted mb-1"><%=Staff.getPosition() %> </p>
-          <p class="text-muted mb-4"><%=Staff.getUsername()%></p>
+            <p class="text-muted mb-1"><%=Staff.getPassword() %> </p>
+          <p class="text-muted mb-4"><%=Staff.getEmail()%></p>
            </div> 
     </div>
     <div class="col-sm-7">
@@ -135,6 +135,8 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
   </div>
 </div>
 </div>
+
+
 <footer>
 <div class="row primary">
   <div class="column about">
@@ -193,7 +195,6 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 </html>

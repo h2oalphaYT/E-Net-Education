@@ -111,14 +111,14 @@
    
    <tr>
       <td><%=Staff.getF_name() %></td>
-      <td>Silva</td>
-      <td>kamal@ENETlecturer.lk</td>
-      <td>0771234567</td>
-      <td>lecturer</td>
-      <td>LIC2000</td>
-      <td>kamal89</td>
+      <td><%=Staff.getL_name() %></td>
+      <td><%=Staff.getPhone() %></td>
+      <td><%=Staff.getPosition() %></td>
+      <td><%=Staff.getEmail() %></td>
+      <td><%=Staff.getUsername() %></td>
+      <td><%=Staff.getPassword() %></td>
       <td><a href="updatestaffinfo.jsp"><button class="button button 1">EDIT</button></a></td>
-      <td><a href="updatestaffinfo.jsp"><button class="button button 2">DELETE</button></a></td>
+      <td><a href=""><button class="button button 2">DELETE</button></a></td>
       </tr>
       <%} %>
       

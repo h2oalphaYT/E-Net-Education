@@ -99,7 +99,7 @@ public class staffDBUtil {
 				String psw = rs.getString(8);
 				
 				
-				stf = new staff(fname,lname,UserID,stfemail,phone,psw,Pos);
+				stf = new staff(fname,lname,stfemail,UserID,phone,psw,Pos);
 				
 				System.out.println("abc"+stf);
 				

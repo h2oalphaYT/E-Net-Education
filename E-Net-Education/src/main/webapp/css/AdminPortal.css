@@ -8,7 +8,7 @@ footer {
  
 }
 footer * {
-  box-sizing: border-box;
+  
   border: none;
   outline: none;
 }
@@ -107,4 +107,12 @@ div.social {
   font-size: 0.9em;
   text-align: right;
 }
+
+
+
+
+
+
+
+
 

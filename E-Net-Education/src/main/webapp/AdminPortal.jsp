@@ -2,19 +2,20 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>
+E-Net Education
+</title>
+<link rel="icon" type="images/x-icon" href="images/logo.png">
+<link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/AdminPortal.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
-
-
-
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">E-Net Education</a>
@@ -28,16 +29,14 @@
         <li class="nav-item">
           <a  class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a href="" class="nav-link" href="#">About Us</a>
-        </li>
+       
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Courses
+            Admin Support
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><a class="dropdown-item" href="#">Email Admin</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
@@ -48,7 +47,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">About Exams</a></li>
-            <li><a class="dropdown-item" href="#">hithanna danna ekak</a></li>
+            <li><a class="dropdown-item" href="#">About System</a></li>
            
           </ul>
         </li>
@@ -58,19 +57,16 @@
                 
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li>
-                        <a class="dropdown-item" href="#">My account</a>
+                        <a class="dropdown-item" href="StudentProfile.jsp">My account</a>
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item" href="Login.jsp">Log out</a>
                     </li>
                 </ul>
             </li>
             
-            <li class="nav-item">
-          <a href="Registation.jsp" class="nav-link" href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Registration</a>
-        </li>
-      
+        
       </ul>
       
     </div>
@@ -79,11 +75,59 @@
 
 
 
-<h1>Admin Portal</h1>
+<!-- Container (Services Section) -->
+<div class="container-fluid text-center">
+  <h2>Admin Services</h2>
+  <h4>Maintain System Best Accurate</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <a  href="#" style="text-decoration:none; color: #4d4d4d "><span class="fa fa-pencil-square-o " style="font-size:36px; color:red"></span>
+      <h4> Add Student Time Tabale</h4></a>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    
+    <div class="col-sm-4">
+      <a href="#" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-clipboard" style="font-size:36px; color:red"></span>
+      <h4>Manage Exam Interface</h4></a>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    
+    <div class="col-sm-4">
+       <a href="staffInsert.jsp" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-plus-square" style="font-size:36px ;color:red"></span>
+      <h4>  Add Staff Mambers</h4></a>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+       <a href="#" style="text-decoration:none; color: #4d4d4d"><span class="	fa fa-gear" style= "font-size:36px; color:red"></span>
+      <h4>Settings</h4></a>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    
+    <div class="col-sm-4">
+       <a href="#" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-envelope" style= "font-size:36px;color:red"></span>
+      <h4>Student Review</h4></a>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    
+    <div class="col-sm-4">
+       <a href="#" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-power-off" style= "font-size:36px ;color:red"></span>
+      <h4 >System Reset</h4></a>
+      <p>If Serever Under Maintain.</p>
+    </div>
+  </div>
+</div>
+
+
+<br>
 
 
 
-<footer>
+<footer style="margin-top:60px">
 <div class="row primary">
   <div class="column about">
     <h3>Connect</h3>
@@ -134,5 +178,9 @@
 </footer>
 
 
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
-</html>>
+</html>

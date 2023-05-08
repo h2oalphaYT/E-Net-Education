@@ -87,7 +87,7 @@
       <div class="col-lg-4">
         <div class="card mb-4">
           <div class="card-body text-center">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+            <img src="images/av1.webp" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;">
             <h5 class="my-3"><%=std.getName() %> <%=std.getL_name() %></h5>
             <p class="text-muted mb-1"><%=std.getPosition() %> </p>

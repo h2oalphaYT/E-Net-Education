@@ -12,8 +12,5 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/MALSHIKA/Desktop/Y2S1 Assignments/OOP/New folder/IT21069154/E-Net-Education/E-Net-Education/src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.48-bin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/MALSHIKA/Desktop/Y2S1 Assignments/OOP/New folder/IT21069154/E-Net-Education/E-Net-Education/src/main/webapp/WEB-INF/lib/servlet-api.jar"/>
-	<classpathentry kind="lib" path="C:/Users/MALSHIKA/Desktop/Y2S1 Assignments/OOP/New folder/IT21069154/E-Net-Education/E-Net-Education/src/main/webapp/WEB-INF/lib/javax.servlet-3.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

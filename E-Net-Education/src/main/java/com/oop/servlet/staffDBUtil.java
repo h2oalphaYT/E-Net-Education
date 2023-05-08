@@ -137,5 +137,30 @@ public class staffDBUtil {
 		return isSuccess;
 	
 	}
+	public static boolean deleteMamber(String userid) {
+		
+		try {
+			
+			con = DBConnect.getConnection();
+			stmt = con.createStatement();
+			String sql = "delete * from staff where username='"+userid+"'";
+			int r = stmt.executeUpdate(sql);
+			
+			if (r > 0) {
+				isSuccess = true;
+			}
+			else {
+				isSuccess = false;
+			}
+			
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return isSuccess;
+	}
+
+
 
 }

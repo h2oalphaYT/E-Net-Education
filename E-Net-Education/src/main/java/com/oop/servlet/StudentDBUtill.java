@@ -207,7 +207,7 @@ public static boolean deleteProfile(String userid) {
 		
 		con = DBConnect.getConnection();
 		stmt = con.createStatement();
-		String sql = "delete from registration where UserID='"+userid+"'";
+		String sql = "delete * from registration where UserID='"+userid+"'";
 		int r = stmt.executeUpdate(sql);
 		
 		if (r > 0) {

@@ -64,7 +64,7 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item" href="index.jsp">Log out</a>
                     </li>
                 </ul>
             </li>
@@ -114,7 +114,7 @@
       <td><%=Staff.getPassword() %></td>
      
       <td><a href="EditstaffProfile?id=<%=Staff.getUsername() %>"><button class="button button 1">EDIT</button></a></td>
-      <td><a href=""><button class="button button 2">DELETE</button></a></td>
+      <td><a href=""><button class="button button 2" onclick="DeleteAccount('<%=Staff.getUsername()%>')">Remove System</button></a></td>
      </tr>
      <% }%>
     
@@ -123,6 +123,15 @@
    </div>
    
 <script src="js/bootstrap.bundle.min.js"></script>
-   </body>
+<script>
+function DeleteAccount(id){
+	if(confirm("Are you sure you want to Remove That Staff Mamber")){
+		window.location.href ="DeleteStaffInfoServlet?id=" + id;
+	}
+}
+
+</script>
+
+  </body>
    </html>
    

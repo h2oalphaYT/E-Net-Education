@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@page import="java.util.ArrayList"%>
+    <%@page import="com.oop.servlet.staff"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,8 +11,10 @@
 <link rel ="stylesheet" type="text/css" href="staffdetail.css">
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
+<body>
 
-
+ <% staff Staff = (staff)request.getAttribute("StaffDetails"); %>
+   
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">E-Net Education</a>
@@ -75,20 +79,56 @@
 
 <body>
 
-  
-<form action="" method="post">
-       
-       First Name<input type="text" name="f_name" value="" ><br>
-       Last Name<input type="text" name="l_name" value="" ><br>
-       Email <input type="text" name="email" value="" ><br>
-       Contact no<input type="text" name="contactno" value=""><br>
-       Position<input type="text" name="position" value="" ><br>
-       User name<input type="text" name="username" value=""><br>
-       Password <input type="password" name="password" value=""><br>
-<br>
-       <input type="submit" name="submit" value="Update information">
-
-</form>
+ 
+<div class="container-fluid bg-dark.bg-gradient">
+  <h2 class="text-center text-dark">Update Profile Details</h2>
+  <div class="row">
+    <div class="col-sm-5">
+        <div class="card-body text-center">
+            <img src="images/av3.png" alt="avatar"
+              class="rounded-circle img-fluid" style="width: 150px;">
+            <h5 class="my-3"><%=Staff.getF_name() %> <%=Staff.getL_name() %></h5>
+            <p class="text-muted mb-1"><%=Staff.getPosition() %> </p>
+          <p class="text-muted mb-4"><%=Staff.getUsername()%></p>
+           </div> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+           <form action="Updatestaffinfoservlet.java" method="post">
+	
+		
+		First Name
+		<input type="text" name="name" value="<%=Staff.getF_name() %>">
+		
+		
+		Last Name
+		<input type="text" name="lname" value="<%=Staff.getL_name() %>">
+		
+		
+		Email
+		<input type="text" name="email" value="<%=Staff.getEmail() %>">
+	
+	
+		User Name
+		<input type="text" name="userid" value="<%=Staff.getUsername()%>" readonly>
+	
+		Phone number
+		<input type="text" name="phone" value="<%=Staff.getPhone()%>">
+		
+		Position
+		<input type="text" name="position" value="<%=Staff.getPosition() %>">
+	
+			
+	<br>
+	<br>
+	<input class="btn btn-outline-dark" type="submit" name="submit" value="Update My Profile">
+	</form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 </body>
 </html>

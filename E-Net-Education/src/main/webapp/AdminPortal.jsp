@@ -94,7 +94,7 @@ E-Net Education
     </div>
     
     <div class="col-sm-4">
-       <a href="staffInsert.jsp" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-plus-square" style="font-size:36px ;color:red"></span>
+       <a href="staffdetail.jsp" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-plus-square" style="font-size:36px ;color:red"></span>
       <h4>  Add Staff Mambers</h4></a>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>

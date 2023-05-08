@@ -94,4 +94,14 @@
     <servlet-name>ShowStaffservlet</servlet-name>
     <url-pattern>/ShowStaffservlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditstaffProfile</display-name>
+    <servlet-name>EditstaffProfile</servlet-name>
+    <servlet-class>com.oop.servlet.EditstaffProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditstaffProfile</servlet-name>
+    <url-pattern>/EditstaffProfile</url-pattern>
+  </servlet-mapping>
 </web-app>

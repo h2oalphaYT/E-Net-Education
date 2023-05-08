@@ -76,7 +76,7 @@ public class staffDBUtil {
 		return isSuccess;
 	}
 
-	public static boolean updateStaff(String fname, String lname, String email, String phone, String position,String username, String password) {
+	public static boolean updateStaff(String fname, String lname, String email, String phone, String position,String username) {
 		
 		try {
 			con = DBConnect.getConnection();

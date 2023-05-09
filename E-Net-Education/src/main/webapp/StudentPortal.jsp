@@ -10,6 +10,61 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/StudentPortal.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+
+<style>
+
+
+
+
+
+.panel {
+  border: 1px solid #ffd11a;
+  border-radius:0;
+  transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+  box-shadow: 8px 0px 40px rgb(255, 209, 26);
+}
+
+.panel-footer .btn:hover {
+  border: 3px solid gray;
+  background-color: #fff !important;
+  color: black;
+}
+
+.panel-heading {
+  color: #fff !important;
+  background-color: #4d4d4d !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+  background-color: #fff !important;
+}
+
+.panel-footer h3 {
+  font-size: 32px;
+}
+
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #4d4d4d;
+  color: #fff;
+}
+</style>
 </head>
 <body>
 
@@ -79,14 +134,107 @@
 
 
 
-<h1>Student Portal</h1>
 
+<div class="container-fluid">
+  <div class="text-center">
+    <h2>Student Workbench</h2>
+    <h4>Choose a Best plan that works for you</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Mok Exam Bank</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Attempt</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Exam Time Tabale</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Visit</button>
+        </div>
+      </div>
+    </div>
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Exam Notices</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>Select Correct Year and batch</h4>
+          <button class="btn btn-lg">Attempt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-dark text-secondary">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5 ">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>  Mount Lavinia, Colombo</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +94 717245632</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> enetEDU@my.ENET.lk</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group ">
+          <button class="btn btn-dark" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <footer>
 <div class="row primary">
   <div class="column about">
-    <h3>Connect</h3>
+    
     <p>
       <i class="fa fa-map-marker" aria-hidden="true"></i>
       47/3 Mount Lavinia, Service Road, Colombo.
@@ -135,4 +283,4 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
-</html>>
+</html>

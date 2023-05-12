@@ -10,6 +10,8 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.oop.model.staff;
+
 
 public class ShowStaffservlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

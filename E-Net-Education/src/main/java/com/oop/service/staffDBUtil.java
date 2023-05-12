@@ -1,4 +1,4 @@
-package com.oop.servlet;
+package com.oop.service;
 
 import java.sql.Connection;
 

@@ -1,8 +1,12 @@
-package com.oop.servlet;
+package com.oop.service;
 
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.oop.model.Student;
+import com.oop.util.DBConnect;
+
 import java.sql.Connection;
 
 

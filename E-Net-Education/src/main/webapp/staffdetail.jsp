@@ -8,10 +8,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Staff Details</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel ="stylesheet" type="text/css" href="staffdetail.css">
+
+<link rel ="stylesheet" type="text/css" href="css/staffdetail.css">
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 
 </head>
 
@@ -78,8 +78,8 @@
     </div>
   </div>
 </nav>
-
-<body>
+<br>
+ <a href="staffInsert.jsp"><button class="btn btn-outline-dark btn-lg px-4 me-md-2 " type="submit" Style="padding: 15px 32px">Add Staff Details</button></a>
 
 
 

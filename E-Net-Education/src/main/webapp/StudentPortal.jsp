@@ -37,7 +37,7 @@
 
 .panel-heading {
   color: #fff !important;
-  background-color: #4d4d4d !important;
+  background-color: #232323 !important;
   padding: 25px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 0px;
@@ -61,7 +61,7 @@
 
 .panel-footer .btn {
   margin: 15px 0;
-  background-color: #4d4d4d;
+  background-color: #232323;
   color: #fff;
 }
 </style>

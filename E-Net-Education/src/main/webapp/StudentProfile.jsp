@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 
 
-<link rel ="stylesheet" type="text/css" href="StudentProfile.css">
+<link rel ="stylesheet" type="text/css" href="css/StudentProfile.css">
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>

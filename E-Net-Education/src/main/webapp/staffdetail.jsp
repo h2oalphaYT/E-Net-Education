@@ -17,6 +17,7 @@
 
 <body>
 <jsp:include page="/ShowStaffservlet"></jsp:include>
+
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">E-Net Education</a>
@@ -123,6 +124,7 @@
    </div>
    
 <script src="js/bootstrap.bundle.min.js"></script>
+
 <script>
 function DeleteAccount(id){
 	if(confirm("Are you sure you want to Remove That Staff Mamber")){

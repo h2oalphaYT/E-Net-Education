@@ -82,7 +82,7 @@ E-Net Education
   <br>
   <div class="row">
     <div class="col-sm-4">
-      <a  href="#" style="text-decoration:none; color: #4d4d4d "><span class="fa fa-pencil-square-o " style="font-size:36px; color:red"></span>
+      <a  href="ssfront.jsp" style="text-decoration:none; color: #4d4d4d "><span class="fa fa-pencil-square-o " style="font-size:36px; color:red"></span>
       <h4> Add Student Time Tabale</h4></a>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>

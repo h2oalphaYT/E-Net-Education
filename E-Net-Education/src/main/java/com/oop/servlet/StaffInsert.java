@@ -8,6 +8,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import com.oop.service.staffDBUtil;
+
 
 public class StaffInsert extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -31,8 +33,7 @@ public class StaffInsert extends HttpServlet {
     	isTrue = staffDBUtil.insertStaff(Fname,Lname, email, phone, position, username, password);
     	
     	if(isTrue==true) {
-    		RequestDispatcher dis= request.getRequestDispatcher("success.jsp");
-    		dis.forward(request, response);
+    		response.sendRedirect("staffdetail.jsp");
     	}
     	else {
     		RequestDispatcher dis2= request.getRequestDispatcher("unsuccess.jsp");

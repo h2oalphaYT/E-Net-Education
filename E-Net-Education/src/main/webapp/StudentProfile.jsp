@@ -1,5 +1,7 @@
 <%@page import="com.oop.model.Student"%>
 <%@page import="java.util.List"%>
+<%@page import="com.oop.servlet.DeleteProfileservlet"%>
+<%@page import="com.oop.service.StudentDBUtill"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
    

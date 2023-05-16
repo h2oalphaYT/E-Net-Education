@@ -115,7 +115,7 @@
       <td><%=Staff.getPassword() %></td>
      
       <td><a href="EditstaffProfile?id=<%=Staff.getUsername() %>"><button class="button button 1">EDIT</button></a></td>
-      <td><a href=""><button class="button button 2" onclick="DeleteAccount('<%=Staff.getUsername()%>')">Remove System</button></a></td>
+      <td><a><button class="button button 2" onclick="DeleteAccount('<%=Staff.getUsername()%>')">Remove System</button></a></td>
      </tr>
      <% }%>
     

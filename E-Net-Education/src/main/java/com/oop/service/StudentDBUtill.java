@@ -205,13 +205,13 @@ public static List<Student> getStudentpassword(String userid) {
 }
 
 
-public static boolean deleteProfile(String userid) {
+public static boolean deleteProfile(String id) {
 	
 	try {
 		
 		con = DBConnect.getConnection();
 		stmt = con.createStatement();
-		String sql = "delete * from registration where UserID='"+userid+"'";
+		String sql = "delete from registration where UserID='"+id+"'";
 		int r = stmt.executeUpdate(sql);
 		
 		if (r > 0) {

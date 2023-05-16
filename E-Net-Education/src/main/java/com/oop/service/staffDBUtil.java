@@ -146,7 +146,7 @@ public class staffDBUtil {
 			
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql = "delete * from staff where username='"+userid+"'";
+			String sql = "delete from staff where username='"+userid+"'";
 			int r = stmt.executeUpdate(sql);
 			
 			if (r > 0) {

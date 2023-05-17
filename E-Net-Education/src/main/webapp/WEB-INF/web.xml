@@ -104,42 +104,46 @@
     <servlet-name>EditstaffProfile</servlet-name>
     <url-pattern>/EditstaffProfile</url-pattern>
   </servlet-mapping>
-       
-	<servlet>
-    	<servlet-name>CreateTTservlet</servlet-name>
-    	<servlet-class>com.staffsup.CreateTTservlet</servlet-class>
-    </servlet> 
-    <servlet-mapping>
-    	<servlet-name>CreateTTservlet</servlet-name>
-    	<url-pattern>/creatett</url-pattern>
-    </servlet-mapping>
-    
-     <servlet>
-     	<servlet-name>UpdateTTservlet</servlet-name>
-     	<servlet-class>com.staffsup.UpdateTTservlet</servlet-class>
-     </servlet>
-    <servlet-mapping>
-    	<servlet-name>UpdateTTservlet</servlet-name>
-    	<url-pattern>/updatett</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-     	<servlet-name>SearchTTservlet</servlet-name>
-     	<servlet-class>com.staffsup.SearchTTservlet</servlet-class>
-     </servlet>
-     
-     <servlet-mapping>
-    	<servlet-name>SearchTTservlet</servlet-name>
-    	<url-pattern>/searchtt</url-pattern>
-    </servlet-mapping>
-     
-     <servlet>
-     	<servlet-name>DeleteTTservlet</servlet-name>
-     	<servlet-class>com.staffsup.DeleteTTservlet</servlet-class>
-     </servlet>
-     
-     <servlet-mapping>
-    	<servlet-name>DeleteTTservlet</servlet-name>
-    	<url-pattern>/deletett</url-pattern>
-    </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateTTservlet</servlet-name>
+    <servlet-class>com.staffsup.CreateTTservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateTTservlet</servlet-name>
+    <url-pattern>/creatett</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateTTservlet</servlet-name>
+    <servlet-class>com.staffsup.UpdateTTservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateTTservlet</servlet-name>
+    <url-pattern>/updatett</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchTTservlet</servlet-name>
+    <servlet-class>com.staffsup.SearchTTservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchTTservlet</servlet-name>
+    <url-pattern>/searchtt</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteTTservlet</servlet-name>
+    <servlet-class>com.staffsup.DeleteTTservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteTTservlet</servlet-name>
+    <url-pattern>/deletett</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>contactInsertServlet</display-name>
+    <servlet-name>contactInsertServlet</servlet-name>
+    <servlet-class>com.oop.servlet.contactInsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>contactInsertServlet</servlet-name>
+    <url-pattern>/contactInsertServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

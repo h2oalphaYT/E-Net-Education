@@ -118,7 +118,7 @@ color : red;
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item" href="index.jsp">Log out</a>
                     </li>
                 </ul>
             </li>
@@ -239,8 +239,10 @@ color : red;
 
 
 
-    <div class="container-fluid bg-black-50 text-secondary">
+  <div class="container-fluid bg-black-50 text-secondary">
   <h2 class="text-center text-warning">CONTACT</h2>
+  
+   <form action="contactInsertServlet" method="post"  >
   <div class="row">
     <div class="col-sm-5  text-black-50" >
       <p>Contact us and we'll get back to you within 24 hours.</p>
@@ -265,7 +267,10 @@ color : red;
       </div>
     </div>
   </div>
+  
+  </form>
 </div>
+
 <footer>
 <div class="row primary">
   <div class="column about">

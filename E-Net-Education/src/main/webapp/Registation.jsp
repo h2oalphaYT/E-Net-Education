@@ -14,7 +14,7 @@
     <div class="title">Registration</div>
     <div class="content">
     
-      <form action="Registration" method="post"  onsubmit ="return validateForm()">
+      <form action="Registration" method="post"  >
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
@@ -71,7 +71,7 @@
 </div>
          
         <div class="button">
-          <input type="submit" value="Register" >
+          <input type="submit" value="Register" onclick="validateForm()" >
         </div>
       </form>
     </div>

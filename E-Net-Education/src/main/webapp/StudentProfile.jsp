@@ -23,7 +23,7 @@
 	
     <section style="background-color: #4c4e52;">
 
-       <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">E-Net Education</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

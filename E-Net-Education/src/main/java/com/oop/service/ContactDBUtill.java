@@ -2,8 +2,10 @@ package com.oop.service;
 
 import java.sql.Connection;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import com.oop.model.Contact;
+import com.oop.model.staff;
 import com.oop.util.DBConnect;
 
 public class ContactDBUtill {
@@ -12,6 +14,8 @@ public class ContactDBUtill {
 	private static Connection con = null;
 	private static Statement stmt = null;
 	private static java.sql.ResultSet rs = null;
+	
+	
 	
 	public static Contact getContact(String iD) {	
 		Contact contact = null;
@@ -80,5 +84,42 @@ public class ContactDBUtill {
 		return isSuccess;
 		
 	}
+	
+public static ArrayList<Contact> getContactDetails(){
+		
+		ArrayList<Contact> ContactDetails = new ArrayList<Contact>();
+	   	 
+	   
+	   	 //validating
+	   	 
+	   	 try {
+	   		 con = DBConnect.getConnection();
+	   		 stmt = con.createStatement();
+	   		 String sql = "select * from contact" ;
+	         rs = stmt.executeQuery(sql);
+	   		 
+	   		 while(rs.next()) {
+	   			 
+	   			 int Cid= rs.getInt(1);
+	   			 String name= rs.getString(2);
+	   			 String email=rs.getString(3);
+	   			 String Massage = rs.getString(4);
+	   			
+	   			 
+	   			 Contact c =  new Contact(Cid,name,email,Massage );
+	   			 
+	   			ContactDetails.add(c);
+	   		 }
+	   	 }
+	   	 catch(Exception e) {
+	   		 e.printStackTrace();
+	   	 }
+	   	 
+	   	 
+	   	 return ContactDetails;
+		
+	}
+	
+	
 
 }

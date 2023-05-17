@@ -146,4 +146,14 @@
     <servlet-name>contactInsertServlet</servlet-name>
     <url-pattern>/contactInsertServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Showcontactservlet</display-name>
+    <servlet-name>Showcontactservlet</servlet-name>
+    <servlet-class>com.oop.servlet.Showcontactservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Showcontactservlet</servlet-name>
+    <url-pattern>/Showcontactservlet</url-pattern>
+  </servlet-mapping>
 </web-app>

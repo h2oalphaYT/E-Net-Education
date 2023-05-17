@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Staff Details</title>
-
+<link rel="icon" type="images/x-icon" href="images/logo.png">
 <link rel ="stylesheet" type="text/css" href="css/staffdetail.css">
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">

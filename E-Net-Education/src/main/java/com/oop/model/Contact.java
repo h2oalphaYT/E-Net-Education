@@ -3,18 +3,6 @@ package com.oop.model;
 public class Contact {
 	
 	private int ContactID;
-	public int getContactID() {
-		return ContactID;
-	}
-
-
-
-	public void setContactID(int contactID) {
-		ContactID = contactID;
-	}
-
-
-
 	private String name ;
 	private String Email;
 	private String Comment;
@@ -25,7 +13,7 @@ public class Contact {
 		
 		super();
 		
-		
+		this.ContactID=ContactID;
 		this.name =name;
 		this.Email=Email;
 		this.Comment = Comment;
@@ -61,6 +49,11 @@ public class Contact {
 	public String getComment() {
 		return Comment;
 	}
+	
+	public int getID() {
+		return ContactID;
+	}
+
 
 
 

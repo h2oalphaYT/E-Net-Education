@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 import java.util.List;
 
 import com.oop.model.Student;
+import com.oop.service.IstudentDBUtill;
 import com.oop.service.StudentDBUtill;
 
 @webServlet("/login")
@@ -29,11 +30,11 @@ public class LoginServelet extends HttpServlet {
 		String psw = request.getParameter("psw");
 		
 		boolean isTrue;
-		
-		isTrue = StudentDBUtill.validate(email, psw);
+		IstudentDBUtill STD = new StudentDBUtill();
+		isTrue = STD.validate(email, psw);
 		
 		if (isTrue == true) {
-			Student StdDetails = StudentDBUtill.getStudent(email);
+			Student StdDetails = STD.getStudent(email);
 			request.setAttribute("StdDetails", StdDetails);
 			session.setAttribute("StdDetails", StdDetails);
 			

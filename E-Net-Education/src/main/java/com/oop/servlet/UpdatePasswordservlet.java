@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import com.oop.model.Student;
+import com.oop.service.IstudentDBUtill;
 import com.oop.service.StudentDBUtill;
 
 import jakarta.servlet.RequestDispatcher;
@@ -31,20 +32,20 @@ public class UpdatePasswordservlet extends HttpServlet {
 		String Rpsw = request.getParameter("rpsw");
 		
 		boolean isTrue;
-		
-		isTrue = StudentDBUtill.updatePassword( Email,userid, psw,Rpsw);
+		IstudentDBUtill STD = new StudentDBUtill();
+		isTrue = STD.updatePassword( Email,userid, psw,Rpsw);
 		
 
 		if(isTrue == true) {
 			
-			List<Student> stdDetails = StudentDBUtill.getStudentpassword(userid);
+			List<Student> stdDetails = STD.getStudentpassword(userid);
 			request.setAttribute("stdDetails", stdDetails);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("Login.jsp");
 			dis.forward(request, response);
 		}
 		else {
-			List<Student> stdDetails = StudentDBUtill.getStudentpassword(userid);
+			List<Student> stdDetails = STD.getStudentpassword(userid);
 			request.setAttribute("stdDetails", stdDetails);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");

@@ -3,6 +3,7 @@ package com.oop.servlet;
 import java.io.IOException;
 
 import com.oop.model.Student;
+import com.oop.service.IstudentDBUtill;
 import com.oop.service.StudentDBUtill;
 
 import jakarta.servlet.RequestDispatcher;
@@ -22,7 +23,8 @@ public class DeleteProfileservlet extends HttpServlet {
 	   System.out.println(UserID);
 	   boolean isTrue;
 	   
-	   isTrue = StudentDBUtill.deleteProfile(UserID);
+	   IstudentDBUtill STD = new StudentDBUtill();
+	   isTrue = STD.deleteProfile(UserID);
 	   
 	   if (isTrue == true) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("Registation.jsp");
@@ -30,7 +32,7 @@ public class DeleteProfileservlet extends HttpServlet {
 		}
 		else {
 			
-			Student StdDetails = StudentDBUtill.getStudent("UserID");
+			Student StdDetails = STD.getStudent("UserID");
 			request.setAttribute("stdDetails", StdDetails);
 			
 			RequestDispatcher dispatcher = request.getRequestDispatcher("unsuccess.jsp");

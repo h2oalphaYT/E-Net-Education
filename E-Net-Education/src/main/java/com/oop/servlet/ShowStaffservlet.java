@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.oop.model.staff;
+import com.oop.service.IstaffDBUtill;
 import com.oop.service.staffDBUtil;
 
 
@@ -23,8 +24,8 @@ public class ShowStaffservlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
 		
-		
-		ArrayList<staff> stafflist =  staffDBUtil.getstaffDetails();
+		IstaffDBUtill STF = new staffDBUtil();
+		ArrayList<staff> stafflist =  STF.getstaffDetails();
 		request.setAttribute("StaffList", stafflist);
 	}
 

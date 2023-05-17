@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 import com.oop.service.ContactDBUtill;
+import com.oop.service.IcontactDBUtill;
 import com.oop.service.StudentDBUtill;
 
 @webServlet("/contactInsertServlet")
@@ -27,8 +28,9 @@ public class contactInsertServlet extends HttpServlet {
 		
 		boolean isTrue; 
 		
+		IcontactDBUtill CDB = new ContactDBUtill();
 		
-		isTrue =ContactDBUtill.insertContact(name,Email,massage);
+		isTrue = CDB.insertContact(name,Email,massage);
 		 
 		if(isTrue) {
 			 RequestDispatcher dis = request.getRequestDispatcher ("success.jsp");

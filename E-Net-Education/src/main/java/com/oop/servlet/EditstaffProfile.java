@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 import com.oop.model.staff;
+import com.oop.service.IstaffDBUtill;
 import com.oop.service.staffDBUtil;
 
 
@@ -21,7 +22,8 @@ public class EditstaffProfile extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
 		
-		staff Staff = staffDBUtil.getStaff(id);
+		IstaffDBUtill STF = new staffDBUtil();
+		staff Staff = STF.getStaff(id);
 		
 		request.setAttribute("StaffDetails", Staff);
 

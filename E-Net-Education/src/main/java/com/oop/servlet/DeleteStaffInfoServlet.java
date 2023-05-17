@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 import com.oop.model.staff;
+import com.oop.service.IstaffDBUtill;
 import com.oop.service.staffDBUtil;
 
 public class DeleteStaffInfoServlet extends HttpServlet {
@@ -19,8 +20,8 @@ public class DeleteStaffInfoServlet extends HttpServlet {
 		 String UserID = request.getParameter("id");
 		   System.out.println(UserID);
 		   boolean isTrue;
-		   
-		   isTrue = staffDBUtil.deleteMamber(UserID);
+		   IstaffDBUtill STF = new staffDBUtil();
+		   isTrue = STF.deleteMamber(UserID);
 		   
 		   
 		   if(isTrue) {

@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import com.oop.model.Contact;
 import com.oop.model.staff;
 import com.oop.service.ContactDBUtill;
+import com.oop.service.IcontactDBUtill;
 import com.oop.service.staffDBUtil;
 
 
@@ -23,8 +24,8 @@ public class Showcontactservlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
 		
-		
-		ArrayList<Contact> Contactlist =  ContactDBUtill.getContactDetails();
+		IcontactDBUtill CDB = new ContactDBUtill();
+		ArrayList<Contact> Contactlist =  CDB.getContactDetails();
 		request.setAttribute("Contactlist",Contactlist);
 	}
 

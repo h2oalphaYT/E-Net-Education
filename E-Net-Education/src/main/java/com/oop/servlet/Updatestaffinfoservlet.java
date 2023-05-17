@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import com.oop.service.IstaffDBUtill;
 import com.oop.service.staffDBUtil;
 
 public class Updatestaffinfoservlet extends HttpServlet {
@@ -31,7 +32,9 @@ public class Updatestaffinfoservlet extends HttpServlet {
     	
     	boolean isTrue;
     	
-    	isTrue = staffDBUtil.updateStaff(Fname,Lname, email, phone, position, username);
+    	IstaffDBUtill STF = new staffDBUtil();
+    	
+    	isTrue = STF.updateStaff(Fname,Lname, email, phone, position, username);
     	
     	if(isTrue==true) {
     		

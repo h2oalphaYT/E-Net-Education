@@ -2,6 +2,7 @@ package com.oop.servlet;
 
 import java.io.IOException;
 
+import com.oop.service.IstudentDBUtill;
 import com.oop.service.StudentDBUtill;
 
 import jakarta.servlet.RequestDispatcher;
@@ -31,8 +32,8 @@ public class RegistationServelet extends HttpServlet {
 		
 		boolean isTrue;
 		
-		
-		isTrue = StudentDBUtill.insertstudent(name,l_name,userID,email,p_number,psw,c_psw,gender);
+		IstudentDBUtill STD = new StudentDBUtill();
+		isTrue = STD.insertstudent(name,l_name,userID,email,p_number,psw,c_psw,gender);
 		 
 		if(isTrue) {
 			 RequestDispatcher dis = request.getRequestDispatcher ("Login.jsp");

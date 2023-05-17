@@ -11,14 +11,14 @@ import java.util.List;
 import com.oop.model.staff;
 import com.oop.util.DBConnect;
 
-public class staffDBUtil {
+public class staffDBUtil implements IstaffDBUtill  {
 	
 	private static Connection con = null;
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
 	private static boolean isSuccess;
 	
-	public static ArrayList<staff> getstaffDetails(){
+	public  ArrayList<staff> getstaffDetails(){
 		
 		ArrayList<staff> stfDetails = new ArrayList<staff>();
 	   	 
@@ -54,7 +54,7 @@ public class staffDBUtil {
 		
 	}
 	
-	public static boolean insertStaff(String Fname,String Lname, String email, String contactno, String position, String username, String password) {
+	public boolean insertStaff(String Fname,String Lname, String email, String contactno, String position, String username, String password) {
 		
 		boolean isSuccess= false;
 		
@@ -79,7 +79,7 @@ public class staffDBUtil {
 		return isSuccess;
 	}
 	
-	public static staff getStaff(String userid) {	
+	public  staff getStaff(String userid) {	
 		staff stf = null;
 		try {
 			
@@ -115,7 +115,7 @@ public class staffDBUtil {
 		return stf;	
 	}
 
-	public static boolean updateStaff(String fname, String lname, String email, String phone, String position,String username) {
+	public  boolean updateStaff(String fname, String lname, String email, String phone, String position,String username) {
 		
 		try {
 			con = DBConnect.getConnection();
@@ -140,7 +140,7 @@ public class staffDBUtil {
 		return isSuccess;
 	
 	}
-	public static boolean deleteMamber(String userid) {
+	public  boolean deleteMamber(String userid) {
 		
 		try {
 			

@@ -11,7 +11,7 @@ import java.sql.Connection;
 
 
 
-public class StudentDBUtill {
+public class StudentDBUtill implements IstudentDBUtill {
 	
 
 	
@@ -20,7 +20,7 @@ public class StudentDBUtill {
 	private static Statement stmt = null;
 	private static java.sql.ResultSet rs = null;
     
-	public static boolean validate(String email, String psw) {
+	public  boolean validate(String email, String psw) {
 		
 		try {
 			con = DBConnect.getConnection();
@@ -41,7 +41,7 @@ public class StudentDBUtill {
 		return isSuccess;
 	}
 	
-	public static Student getStudent(String email) {	
+	public Student getStudent(String email) {	
 		Student std = null;
 		try {
 			
@@ -84,7 +84,7 @@ public class StudentDBUtill {
 	
 	
 	
-	public static boolean insertstudent(String name, String l_name,String UserID, String email, int p_number, String psw, String c_psw, String gender) {
+	public  boolean insertstudent(String name, String l_name,String UserID, String email, int p_number, String psw, String c_psw, String gender) {
 		
 		boolean isSuccess = false ;
 		
@@ -118,7 +118,7 @@ public class StudentDBUtill {
 		
 	}
 	
-public static boolean updatePassword( String Email,  String userid, String psw,String Rpsw) {
+public  boolean updatePassword( String Email,  String userid, String psw,String Rpsw) {
     	
     	try {
     		
@@ -143,7 +143,7 @@ public static boolean updatePassword( String Email,  String userid, String psw,S
     	return isSuccess;
     }
 
-public static boolean updateProfile( String fname ,  String lname, String email,String phone ,String userid) {
+public  boolean updateProfile( String fname ,  String lname, String email,String phone ,String userid) {
 	
 	try {
 		
@@ -169,7 +169,7 @@ public static boolean updateProfile( String fname ,  String lname, String email,
 }
 
 
-public static List<Student> getStudentpassword(String userid) {
+public  List<Student> getStudentpassword(String userid) {
 	
 	
 	
@@ -205,7 +205,7 @@ public static List<Student> getStudentpassword(String userid) {
 }
 
 
-public static boolean deleteProfile(String id) {
+public  boolean deleteProfile(String id) {
 	
 	try {
 		

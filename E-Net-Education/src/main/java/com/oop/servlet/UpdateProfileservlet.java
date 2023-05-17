@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 import com.oop.model.Student;
+import com.oop.service.IstudentDBUtill;
 import com.oop.service.StudentDBUtill;
 
 
@@ -31,12 +32,12 @@ public class UpdateProfileservlet extends HttpServlet {
 		String userid = request.getParameter("userid");
 		
 		boolean  isTrue;
-		
-		isTrue = StudentDBUtill.updateProfile(  fname ,  lname, email, phone ,userid);
+		IstudentDBUtill STD = new StudentDBUtill();
+		isTrue = STD.updateProfile(  fname ,  lname, email, phone ,userid);
 		
 		if(isTrue == true) {
 			
-			Student stdDetails = StudentDBUtill.getStudent(email);
+			Student stdDetails = STD.getStudent(email);
 			session.setAttribute("StdDetails", stdDetails);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("StudentProfile.jsp");
@@ -44,7 +45,7 @@ public class UpdateProfileservlet extends HttpServlet {
 		}
 		else {
 			
-			Student stdDetails = StudentDBUtill.getStudent(email);
+			Student stdDetails = STD.getStudent(email);
 			session.setAttribute("StdDetails", stdDetails);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");

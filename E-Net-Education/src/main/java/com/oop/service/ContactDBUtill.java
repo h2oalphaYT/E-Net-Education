@@ -8,7 +8,7 @@ import com.oop.model.Contact;
 import com.oop.model.staff;
 import com.oop.util.DBConnect;
 
-public class ContactDBUtill {
+public class ContactDBUtill implements IcontactDBUtill  {
 	
 	private static boolean isSuccess;
 	private static Connection con = null;
@@ -17,7 +17,7 @@ public class ContactDBUtill {
 	
 	
 	
-	public static Contact getContact(String iD) {	
+	public  Contact getContact(String iD) {	
 		Contact contact = null;
 		try {
 			
@@ -51,7 +51,7 @@ public class ContactDBUtill {
 	}
 	
 
-	public static boolean insertContact( String name ,String Email,String massage) {
+	public boolean insertContact( String name ,String Email,String massage) {
 		
 		boolean isSuccess = false ;
 		
@@ -85,7 +85,7 @@ public class ContactDBUtill {
 		
 	}
 	
-public static ArrayList<Contact> getContactDetails(){
+public  ArrayList<Contact> getContactDetails(){
 		
 		ArrayList<Contact> ContactDetails = new ArrayList<Contact>();
 	   	 

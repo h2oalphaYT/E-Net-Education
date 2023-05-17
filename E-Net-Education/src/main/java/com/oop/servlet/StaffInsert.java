@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import com.oop.service.IstaffDBUtill;
 import com.oop.service.staffDBUtil;
 
 
@@ -30,7 +31,8 @@ public class StaffInsert extends HttpServlet {
     	
     	boolean isTrue;
     	
-    	isTrue = staffDBUtil.insertStaff(Fname,Lname, email, phone, position, username, password);
+    	IstaffDBUtill STF = new staffDBUtil();
+    	isTrue = STF.insertStaff(Fname,Lname, email, phone, position, username, password);
     	
     	if(isTrue==true) {
     		response.sendRedirect("staffdetail.jsp");

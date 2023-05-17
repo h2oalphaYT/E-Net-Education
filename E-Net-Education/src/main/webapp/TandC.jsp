@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="TandC.css">
+<title>Terms & Condition</title>
+<link rel="stylesheet" type="text/css" href="css/TandC.css">
 </head>
 
 <body>

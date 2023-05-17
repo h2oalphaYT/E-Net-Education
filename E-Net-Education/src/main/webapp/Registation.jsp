@@ -14,7 +14,7 @@
     <div class="title">Registration</div>
     <div class="content">
     
-      <form action="Registration" method="post">
+      <form action="Registration" method="post"  onsubmit ="return validateForm()">
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
@@ -38,11 +38,11 @@
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" name="psw" required>
+            <input type="text" placeholder="Enter your password" name="psw" id="psw" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" name="c_psw"required>
+            <input type="text" placeholder="Confirm your password" name="c_psw" id="c_psw" required>
           </div>
         </div>
         <div class="gender-details">
@@ -71,12 +71,14 @@
 </div>
          
         <div class="button">
-          <input type="submit" value="Register">
+          <input type="submit" value="Register" >
         </div>
       </form>
     </div>
   </div>
 
 
+
+<script src="js/Registration.js"></script>
 </body>
 </html>

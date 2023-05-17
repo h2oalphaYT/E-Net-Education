@@ -61,7 +61,8 @@
   color: #fff;
 }
 .btn:hover {
-color : red;
+color : White;
+background-color :#ffc107; 
 }
 
 

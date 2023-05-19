@@ -95,7 +95,7 @@
          <td><%=contact.getComment() %></td>
          
          <td><a href="#"><button class="button button 1">Contact</button></a></td>
-         <td><a href="#"><button class="button button 1">Ignore</button></a></td>
+         <td><a ><button class="button button 1" onclick="IgnoreContact('<%=contact.getID()%>')">Ignore</button></a></td>
       </tr>
 
     <% }%>
@@ -158,5 +158,14 @@
 
 </footer>  
  <script src="js/bootstrap.bundle.min.js"></script>
+ 
+ <script>
+function IgnoreContact(id){
+	if(confirm("Are you sure you want to Remove This Message(Feedback)**")){
+		window.location.href ="IgnoreContactservlet?id=" + id;
+	}
+}
+
+</script>
 </body>
 </html>

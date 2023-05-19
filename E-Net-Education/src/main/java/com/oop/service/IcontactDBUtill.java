@@ -12,5 +12,7 @@ public interface IcontactDBUtill {
 	
 	public  ArrayList<Contact> getContactDetails();
 	
+	public  boolean deleteContact(int id);
+	
 
 }

@@ -119,6 +119,29 @@ public  ArrayList<Contact> getContactDetails(){
 	   	 return ContactDetails;
 		
 	}
+public  boolean deleteContact(int id) {
+	
+	try {
+		
+		con = DBConnect.getConnection();
+		stmt = con.createStatement();
+		String sql = "delete from contact where idContact='"+id+"'";
+		int r = stmt.executeUpdate(sql);
+		
+		if (r > 0) {
+			isSuccess = true;
+		}
+		else {
+			isSuccess = false;
+		}
+		
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+	
+	return isSuccess;
+}
 	
 	
 

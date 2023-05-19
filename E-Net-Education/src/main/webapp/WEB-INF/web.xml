@@ -166,6 +166,14 @@
     <servlet-name>ViewTTservlet</servlet-name>
     <url-pattern>/ViewTTservlet</url-pattern>
   </servlet-mapping>
-  
-  
+  <servlet>
+    <description></description>
+    <display-name>IgnoreContact</display-name>
+    <servlet-name>IgnoreContact</servlet-name>
+    <servlet-class>com.oop.servlet.IgnoreContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IgnoreContact</servlet-name>
+    <url-pattern>/IgnoreContact</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -7,6 +7,7 @@
 <title>Registration</title>
 
 <link rel="stylesheet" type="text/css" href="css/Registation.css">
+<link rel="icon" type="images/x-icon" href="images/logo.png">
 </head>
 <body>
 

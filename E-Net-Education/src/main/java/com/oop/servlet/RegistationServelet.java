@@ -33,6 +33,8 @@ public class RegistationServelet extends HttpServlet {
 		boolean isTrue;
 		
 		IstudentDBUtill STD = new StudentDBUtill();
+		
+		
 		isTrue = STD.insertstudent(name,l_name,userID,email,p_number,psw,c_psw,gender);
 		 
 		if(isTrue) {

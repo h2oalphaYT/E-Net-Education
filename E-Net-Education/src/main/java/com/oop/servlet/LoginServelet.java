@@ -31,10 +31,12 @@ public class LoginServelet extends HttpServlet {
 		
 		boolean isTrue;
 		IstudentDBUtill STD = new StudentDBUtill();
+		//validate email
 		isTrue = STD.validate(email, psw);
 		
 		if (isTrue == true) {
 			Student StdDetails = STD.getStudent(email);
+			
 			request.setAttribute("StdDetails", StdDetails);
 			session.setAttribute("StdDetails", StdDetails);
 			

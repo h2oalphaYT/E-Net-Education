@@ -168,12 +168,12 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>IgnoreContact</display-name>
-    <servlet-name>IgnoreContact</servlet-name>
-    <servlet-class>com.oop.servlet.IgnoreContact</servlet-class>
+    <display-name>IgnoreContactservlet</display-name>
+    <servlet-name>IgnoreContactservlet</servlet-name>
+    <servlet-class>com.oop.servlet.IgnoreContactservlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>IgnoreContact</servlet-name>
-    <url-pattern>/IgnoreContact</url-pattern>
+    <servlet-name>IgnoreContactservlet</servlet-name>
+    <url-pattern>/IgnoreContactservlet</url-pattern>
   </servlet-mapping>
 </web-app>

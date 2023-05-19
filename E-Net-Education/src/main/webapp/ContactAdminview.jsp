@@ -7,7 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Contact Admin View</title>
-
+<link rel="icon" type="images/x-icon" href="images/logo.png">
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel ="stylesheet" type="text/css" href="css/ContactAdminview.css">
 <link rel="icon" type="images/x-icon" href="images/logo.png">
@@ -102,13 +102,8 @@
    </table>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
- <footer>
+
+ <footer style="margin-top:291px">
 <div class="row primary">
   <div class="column about">
     <h3>Connect</h3>

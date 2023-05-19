@@ -94,8 +94,8 @@
          <td><%=contact.getEmail() %></td>
          <td><%=contact.getComment() %></td>
          
-         <td><a href=""><button class="button button 1">Contact</button></a></td>
-         <td><a href=""><button class="button button 1">Ignore</button></a></td>
+         <td><a href="#"><button class="button button 1">Contact</button></a></td>
+         <td><a href="#"><button class="button button 1">Ignore</button></a></td>
       </tr>
 
     <% }%>

@@ -7,6 +7,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.oop.model.Contact;
+import com.oop.util.DBConnect;
+
 public class StaffsupDBUtil {
 	
 	private static boolean isSuccess;
@@ -26,7 +29,7 @@ public class StaffsupDBUtil {
 		try {
 		
 			
-			con = ExamDBconnect.getConnection();
+			con = DBConnect.getConnection();
 			stmt = con.createStatement();
 			
 			
@@ -49,7 +52,7 @@ public class StaffsupDBUtil {
 	public static boolean updatestaffsup(String examno,String module,String edate,String stime,String tdue) {
 		
 		try {
-			con = ExamDBconnect.getConnection();
+			con = DBConnect.getConnection();
 			stmt = con.createStatement();
 			
 			String sql = "update creatett set module='"+module+"', edate='"+edate+"', stime='"+stime+"', tdue='"+tdue+"'"
@@ -79,7 +82,7 @@ public class StaffsupDBUtil {
 		 
 		 try {
 			 
-			 con = ExamDBconnect.getConnection();
+			 con = DBConnect.getConnection();
 			 stmt = con.createStatement();
 			 
 			String sql = "select * from creatett where examno = '"+examno+"'" ; 
@@ -112,7 +115,7 @@ public class StaffsupDBUtil {
 		
 		try {
 			
-			 con = ExamDBconnect.getConnection();
+			 con = DBConnect.getConnection();
 			 stmt = con.createStatement();
 			 
 			 String sql = "select * from creatett where examno = '"+examno+"'";
@@ -143,7 +146,7 @@ public class StaffsupDBUtil {
 	public static boolean deletestaffsup(String examno) {
 		
 		try {
-			 con = ExamDBconnect.getConnection();
+			 con = DBConnect.getConnection();
 			 stmt = con.createStatement();
 			 
 			 String sql = "delete from creatett where examno = '"+examno+"'";
@@ -166,6 +169,42 @@ public class StaffsupDBUtil {
 		
 		
 		return isSuccess;
+	}
+	
+	public static ArrayList<TimeT> getTTDetails(){
+		
+		ArrayList<TimeT> SVtimeTable = new ArrayList<TimeT>();
+	   	 
+	   
+	   	 //validating
+	   	 
+	   	 try {
+	   		 con = DBConnect.getConnection();
+	   		 stmt = con.createStatement();
+	   		 String sql = "select * from creatett" ;
+	         rs = stmt.executeQuery(sql);
+	   		 
+	   		 while(rs.next()) {
+	   			 
+	   			 String examno= rs.getString(1);
+	   			 String module= rs.getString(2);
+	   			 String edate=rs.getString(3);
+	   			 String stime = rs.getString(4);
+	   			 String tdue = rs.getString(5);
+	   			
+	   			 
+	   			 TimeT t =  new TimeT(examno,module,edate,stime,tdue );
+	   			 
+	   			SVtimeTable.add(t);
+	   		 }
+	   	 }
+	   	 catch(Exception e) {
+	   		 e.printStackTrace();
+	   	 }
+	   	 
+	   	 
+	   	 return SVtimeTable;
+		
 	}
 
 }

@@ -7,7 +7,7 @@
 
 <title>Insert title here</title>
 <script src="https://kit.fontawesome.com/e3ab6cd3c5.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="SU.css">
+<link rel="stylesheet" type="text/css" href="css/SU.css">
 </head>
 <body>
 <div class="wrapper">

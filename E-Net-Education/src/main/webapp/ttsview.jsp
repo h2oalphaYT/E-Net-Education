@@ -278,15 +278,15 @@ tr:nth-child(odd){
   </div>
 </nav>
 
-   <div class="header">Student Contact Request</div>
+   <div class="header">Student Time Tables</div>
    <div>
    <table cellspacing="0">
       <tr>
-         <th>Contact ID</th>
-         <th>Name</th>
-         <th>Email</th>
-         <th>Massage</th>
-         <th>Massage</th>
+         <th>ExamNo</th>
+         <th>Module</th>
+         <th>Date</th>
+         <th>Time</th>
+         <th>Duration</th>
          
        
          

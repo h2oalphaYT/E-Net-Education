@@ -42,6 +42,7 @@ public class LoginServelet extends HttpServlet {
 			
 			RequestDispatcher dis = null;
 			System.out.println(StdDetails.getPosition());
+			
 			if(StdDetails.getPosition().equals("Admin")) {
 				dis = getServletContext().getRequestDispatcher("/AdminPortal.jsp");
 			}

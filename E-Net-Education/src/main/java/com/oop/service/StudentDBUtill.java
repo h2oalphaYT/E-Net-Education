@@ -41,6 +41,33 @@ public class StudentDBUtill implements IstudentDBUtill {
 		return isSuccess;
 	}
 	
+	public  boolean ValidateEmailRepeat(String email) {
+		    isSuccess = false;
+		
+		try {
+			con = DBConnect.getConnection();
+			stmt = con.createStatement();
+			String sql = "select S_email from registration where S_email='"+email+"'";
+			rs =  stmt.executeQuery(sql);
+			
+			System.out.println(rs.next());
+			while (rs.next()) {
+				
+					isSuccess = true;
+			}
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return isSuccess;
+		
+		
+	}
+	
+	
+	
 	public Student getStudent(String email) {	
 		Student std = null;
 		try {

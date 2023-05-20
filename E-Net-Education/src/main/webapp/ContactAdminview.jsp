@@ -11,6 +11,7 @@
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel ="stylesheet" type="text/css" href="css/ContactAdminview.css">
 <link rel="icon" type="images/x-icon" href="images/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -94,7 +95,7 @@
          <td><%=contact.getEmail() %></td>
          <td><%=contact.getComment() %></td>
          
-         <td><a href="#"><button class="button button 1">Contact</button></a></td>
+         <td><a ><button class="fa fa-envelope" onclick="SendMail('<%=contact.getEmail()%>')">Contact</button></a></td>
          <td><a ><button class="button button 1" onclick="IgnoreContact('<%=contact.getID()%>')">Ignore</button></a></td>
       </tr>
 
@@ -159,6 +160,15 @@ function IgnoreContact(id){
 	if(confirm("Are you sure you want to Remove This Message(Feedback)**")){
 		window.location.href ="IgnoreContactservlet?id=" + id;
 	}
+}
+
+function SendMail(email){
+	
+	 var email = document.getElementById("<%=contact.getEmail()%>").value;
+     var subject = ('My permanent subject line');
+     var body = ('My permanent body contents');
+     document.write('<a href="mailto:' + email + '?subject=' +subject+ '&body=' +body+ '">' + 'Click here to send email as well' + '<'+'/a>');
+	
 }
 
 </script>

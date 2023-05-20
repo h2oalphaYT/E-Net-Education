@@ -19,10 +19,11 @@ public class SearchTTservlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String examno = request.getParameter("examno");
+		IStaffsupDBUtil SSDB = new StaffsupDBUtil();
 		
 		try {
 			
-		List<TimeT> timetable = StaffsupDBUtil.validate(examno);
+		List<TimeT> timetable = SSDB.validate(examno);
 		request.setAttribute("timetable", timetable);
 		
 		}

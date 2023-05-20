@@ -25,12 +25,12 @@ public class UpdateTTservlet extends HttpServlet {
 		String tdue = request.getParameter("tdue");
 		
 		boolean isTrue;
-		
-		isTrue = StaffsupDBUtil.updatestaffsup(examno, module, edate, stime, tdue);
+		IStaffsupDBUtil SSDB = new StaffsupDBUtil();
+		isTrue = SSDB.updatestaffsup(examno, module, edate, stime, tdue);
 		
 		if(isTrue == true) {
 			
-			List<TimeT> timetable = StaffsupDBUtil.getTimetDetails(examno);
+			List<TimeT> timetable = SSDB.getTimetDetails(examno);
 			request.setAttribute("timetable", timetable);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("timetable.jsp");
@@ -38,7 +38,7 @@ public class UpdateTTservlet extends HttpServlet {
 			
 		}
 		else {
-			List<TimeT> timetable = StaffsupDBUtil.getTimetDetails(examno);
+			List<TimeT> timetable = SSDB.getTimetDetails(examno);
 			request.setAttribute("timetable", timetable);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("timetable.jsp");

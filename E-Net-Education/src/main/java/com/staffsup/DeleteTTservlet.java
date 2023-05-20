@@ -21,8 +21,8 @@ public class DeleteTTservlet extends HttpServlet {
 		String examno = request.getParameter("examno");
 		
 		boolean isTrue;
-		
-		isTrue = StaffsupDBUtil.deletestaffsup(examno);
+		IStaffsupDBUtil SSDB = new StaffsupDBUtil();
+		isTrue = SSDB.deletestaffsup(examno);
 		
 		if(isTrue==true) {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("creatett.jsp");
@@ -30,7 +30,7 @@ public class DeleteTTservlet extends HttpServlet {
 		}
 		else {
 			
-			List<TimeT> timetable = StaffsupDBUtil.getTimetDetails(examno);
+			List<TimeT> timetable = SSDB.getTimetDetails(examno);
 			request.setAttribute("timetable", timetable);
 			
 			RequestDispatcher dispatcher = request.getRequestDispatcher("timetable.jsp");

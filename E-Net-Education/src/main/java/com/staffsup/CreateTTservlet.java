@@ -26,8 +26,8 @@ public class CreateTTservlet extends HttpServlet {
 		String tdue = request.getParameter("tdue");
 		
 		boolean isTrue;
-		
-		isTrue =StaffsupDBUtil.insertstaffsup(examno, module, edate, stime, tdue);
+		IStaffsupDBUtil SSDB = new StaffsupDBUtil();
+		isTrue =SSDB.insertstaffsup(examno, module, edate, stime, tdue);
 		
 		if(isTrue == true) {
 			RequestDispatcher dis = request.getRequestDispatcher("successCT.jsp");

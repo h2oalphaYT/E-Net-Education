@@ -8,9 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.oop.model.Contact;
+import com.oop.service.IcontactDBUtill;
 import com.oop.util.DBConnect;
 
-public class StaffsupDBUtil {
+public class StaffsupDBUtil implements IStaffsupDBUtil{
 	
 	private static boolean isSuccess;
 	private static Connection con = null;
@@ -19,7 +20,7 @@ public class StaffsupDBUtil {
 	
 	
 	 	
-	public static boolean insertstaffsup(String examno,String module,String edate,String stime,String tdue) {
+	public boolean insertstaffsup(String examno,String module,String edate,String stime,String tdue) {
 		
 		boolean isSuccess = false;
 		
@@ -49,7 +50,7 @@ public class StaffsupDBUtil {
 		return isSuccess;
 	} 
 	
-	public static boolean updatestaffsup(String examno,String module,String edate,String stime,String tdue) {
+	public boolean updatestaffsup(String examno,String module,String edate,String stime,String tdue) {
 		
 		try {
 			con = DBConnect.getConnection();
@@ -76,7 +77,7 @@ public class StaffsupDBUtil {
 		return isSuccess;  
 	}
 	
-	public static List<TimeT> validate(String examno){
+	public List<TimeT> validate(String examno){
 	
 		 ArrayList<TimeT> time = new ArrayList<>();
 		 
@@ -110,7 +111,7 @@ public class StaffsupDBUtil {
 		 return time;
 	}
 	
-	public static List<TimeT> getTimetDetails(String examno){
+	public List<TimeT> getTimetDetails(String examno){
 		ArrayList<TimeT> time = new ArrayList<>();
 		
 		try {
@@ -143,7 +144,7 @@ public class StaffsupDBUtil {
 		return time;
 	}
 	
-	public static boolean deletestaffsup(String examno) {
+	public boolean deletestaffsup(String examno) {
 		
 		try {
 			 con = DBConnect.getConnection();
@@ -171,7 +172,7 @@ public class StaffsupDBUtil {
 		return isSuccess;
 	}
 	
-	public static ArrayList<TimeT> getTTDetails(){
+	public ArrayList<TimeT> getTTDetails(){
 		
 		ArrayList<TimeT> SVtimeTable = new ArrayList<TimeT>();
 	   	 

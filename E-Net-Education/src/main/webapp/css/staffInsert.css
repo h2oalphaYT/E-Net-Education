@@ -2,16 +2,8 @@
 H4 {
 	text-align: center;
 }
-
-body {
-  display: flex;
-  background: rgb(30,30,32);
-  background: linear-gradient(90deg, rgba(30,30,32,1) 4%, rgba(61,66,80,1) 90%);
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width:100%;
-  
+body{
+	background: linear-gradient(135deg, #0000008c , black);
 }
 
 .login-form input[type=text] {

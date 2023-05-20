@@ -19,6 +19,10 @@
 
 <jsp:include page="/Showcontactservlet"></jsp:include>
 
+     
+       <% ArrayList<Contact> ContactDetails = new ArrayList<Contact>();
+   ContactDetails=(ArrayList<Contact>)request.getAttribute("Contactlist"); %>
+      
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">E-Net Education</a>
@@ -82,8 +86,7 @@
          
       </tr>
       
-       <% ArrayList<Contact> ContactDetails = new ArrayList<Contact>();
-   ContactDetails=(ArrayList<Contact>)request.getAttribute("Contactlist"); %>
+   
    
   <%for(int i=0 ; i<ContactDetails.size();i++){
 	  Contact contact = ContactDetails.get(i); %> 
@@ -164,10 +167,10 @@ function IgnoreContact(id){
 
 function SendMail(email){
 	
-	 var email = document.getElementById('email').value;
+	 
      var subject = ('My permanent subject line');
      var body = ('My permanent body contents');
-     document.write('<a href="mailto:' + email + '?subject=' +subject+ '&body=' +body+ '">' + 'Click here to send email as well' + '<'+'/a>');
+     document.write('<a href="mailto:'email'?subject=' +subject+ '&body=' +body+ '">' + 'Click here to send email as well' + '<'+'/a>');
 	
 }
 

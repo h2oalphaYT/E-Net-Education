@@ -78,7 +78,7 @@
 </nav>
 <div>
 	<section id="terms-of-service">
-        <div class="card">
+        <div class="card" style="height : 1800px;">
             <h1 class="primary-heading">Terms & Conditions</h1>
             <p class="paragraph">
                 1) <span class="bold">Eligibility</span>: Only registered users who have paid the required fee and have a valid login ID and password are eligible to take the online examination.
@@ -98,6 +98,9 @@
                 8) <span class="bold">Dispute Resolution</span>: Any disputes arising from the use of the online examination system will be resolved in accordance with the laws of the jurisdiction in which the exam conducting body is located.
                 <br><br><br>
                 9) <span class="bold">Modification</span>: The terms and conditions of the online examination system may be modified at any time without prior notice. Users are responsible for regularly reviewing the terms and conditions and complying with any updates or changes.
+               <br><br>
+                10)<span class="bold"> Examination Regulations </span>: Highlighting any specific regulations or policies that apply to the examination, such as policies on electronic devices, use of calculators, or specific rules for special needs candidates.
+
                 
             </p>
         </div>

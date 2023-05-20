@@ -164,7 +164,7 @@ function IgnoreContact(id){
 
 function SendMail(email){
 	
-	 var email = document.getElementById('<%=contact.getEmail()%>').value;
+	 var email = document.getElementById('email').value;
      var subject = ('My permanent subject line');
      var body = ('My permanent body contents');
      document.write('<a href="mailto:' + email + '?subject=' +subject+ '&body=' +body+ '">' + 'Click here to send email as well' + '<'+'/a>');

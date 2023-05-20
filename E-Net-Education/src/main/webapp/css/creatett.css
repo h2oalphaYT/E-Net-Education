@@ -1,12 +1,29 @@
 @charset "ISO-8859-1";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+body{
+  background-color: #d2d2e0 !important;
+}
+
+body{
+	padding:0 10px;
+}
+
 footer {
   background-color: black !important;
   color: white;
   bottom: 0;
   width: 100%;
   font-size: 16px;
+  position:absolute;
  
 }
 footer * {
@@ -111,28 +128,19 @@ div.social {
 }
 
 
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	font-family: 'Montserrat', sans-serif;
-	
-}
 
-body{
-	background:#27282a;
-	padding:0 10px;
-}
 
 .wrapper{
 	max-width:500px;
 	width:100%;
 	background:#fff;
-	margin:20px auto;
+	margin:50px auto;
 	padding:30px;
-	box-shadow:4px 4px 0 rgba(0,0,0,0.125) !important;
+	box-shadow:4px 4px 0 rgba(0,0,0,0.125);
 	border: 1px solid #327a81 !important;
     border-radius: 10px !important;
+  
+	
 }
 
 .wrapper .title{
@@ -230,5 +238,5 @@ body{
 }
 
 .wrapper .form .input_field .btn:hover{
-	background:#27282a;
+	background-color: #c7940a;
 }

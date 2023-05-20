@@ -27,15 +27,15 @@
           </div>
           <div class="input-box">
             <span class="details">UserID</span>
-            <input type="text" placeholder="Enter your userID" name="u_id" required>
+            <input type="text" placeholder="Enter your userID" name="u_id" pattern="[I-i]{1}[T-t]{1} [0-9]{8}" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" name="email" required>
+            <input type="email" placeholder="Enter your email" name="email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" name="p_number" required>
+            <input type="tel" placeholder="Enter your number" name="p_number"  pattern="[0-9]{10}" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>

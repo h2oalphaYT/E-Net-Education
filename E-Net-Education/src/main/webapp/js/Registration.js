@@ -7,6 +7,8 @@ function validateForm(){
 	
 	var psw1 = document.getElementById("psw").value;
 	var psw2 = document.getElementById("c_psw").value;
+
+	
 	
 	if(psw1 != psw2) {  
       alert("**Passwords are not same");  
@@ -24,13 +26,14 @@ function validateForm(){
 	}  
     else {  
       alert ("Your password created successfully");  
-      document.write("JavaScript form has been submitted successfully"); 
+      window.location.replace("Login.jsp");
       document.getElementById('regFrm').submit(); 
     }  
-	
 
-
-
-
-	
 }
+	
+	
+
+
+
+	

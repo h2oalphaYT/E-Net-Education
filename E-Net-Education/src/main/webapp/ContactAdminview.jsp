@@ -170,7 +170,8 @@ function SendMail(email){
 	 
      var subject = ('My permanent subject line');
      var body = ('My permanent body contents');
-     document.write('<a href="mailto:'email'?subject=' +subject+ '&body=' +body+ '">' + 'Click here to send email as well' + '<'+'/a>');
+     window.open('mailto:email ? subject=subject & body=body');
+
 	
 }
 

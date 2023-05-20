@@ -24,8 +24,9 @@ public class ViewTTservlet extends HttpServlet {
 		
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
+		IStaffsupDBUtil SSDB = new StaffsupDBUtil();
 	
-		ArrayList<TimeT> SVtimeTable = StaffsupDBUtil.getTTDetails();
+		ArrayList<TimeT> SVtimeTable = SSDB.getTTDetails();
 		
 		request.setAttribute("SVtimeTable",SVtimeTable);
 		

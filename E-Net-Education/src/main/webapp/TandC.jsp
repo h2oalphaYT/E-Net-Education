@@ -5,8 +5,15 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Terms & Condition</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" type="text/css" href="css/TandC.css">
 </head>
+
+
+
+<body>
 
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
@@ -69,8 +76,7 @@
     </div>
   </div>
 </nav>
-
-<body>
+<div>
 	<section id="terms-of-service">
         <div class="card">
             <h1 class="primary-heading">Terms & Conditions</h1>
@@ -96,7 +102,8 @@
             </p>
         </div>
     </section>
-    
+    </div>
+    <div>
     <footer>
 <div class="row primary">
   <div class="column about">
@@ -146,6 +153,7 @@
 </div>
 
 </footer>
+</div>
 
 </body>
 </html>

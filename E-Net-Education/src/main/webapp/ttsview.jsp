@@ -54,6 +54,7 @@ table td,
 table th {
   color: #2b686e;
   padding: 10px;
+  text-align: center;
 }
 table td {
   text-align: center;
@@ -417,7 +418,7 @@ div.social {
 
    
    <div class="table-users">
-   <div class="header">Student Contact Request</div>
+   <div class="header">Time Table</div>
    
    <table cellspacing="0">
    

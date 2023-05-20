@@ -96,10 +96,7 @@
 		</div>
 		<div class="input_field">
 		<label>Module</label>
-		<div>
 		<input type="text" name="module" value="<%= module%>" readonly>
-			
-		</div>
 		</div>
 		<div class="input_field">
 		<label>Date</label>

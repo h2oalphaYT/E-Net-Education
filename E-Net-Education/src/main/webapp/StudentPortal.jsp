@@ -100,12 +100,12 @@ background-color :#ffc107;
           </ul>
         </li>
          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Terms & Condition
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">About Exams</a></li>
-            <li><a class="dropdown-item" href="#">hithanna danna ekak</a></li>
+            <li><a class="dropdown-item" href="termsandconditions.jsp">About Exams</a></li>
+            <li><a class="dropdown-item" href="termsandconditions.jsp">About System</a></li>
            
           </ul>
         </li>
@@ -176,8 +176,8 @@ background-color :#ffc107;
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" >
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
-                            <a href="" ><i class="fa fa-3x fa-line-chart text-warning mb-4"></i></a>
-                            <h5 class="mb-3">Home Projects</h5>
+                            <a href="ttsview.jsp" ><i class="fa fa-3x fa-line-chart text-warning mb-4"></i></a>
+                            <h5 class="mb-3">Time Table</h5>
                             <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                         </div>
                     </div>

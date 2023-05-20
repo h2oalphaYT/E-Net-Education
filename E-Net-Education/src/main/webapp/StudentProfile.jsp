@@ -51,12 +51,12 @@
           </ul>
         </li>
          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Terms & Condition
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">About Exams</a></li>
-            <li><a class="dropdown-item" href="#">About System</a></li>
+            <li><a class="dropdown-item" href="termsandconditions.jsp">About Exams</a></li>
+            <li><a class="dropdown-item" href="termsandconditions.jsp">About System</a></li>
            
           </ul>
         </li>

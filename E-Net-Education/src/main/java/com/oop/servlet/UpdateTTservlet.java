@@ -1,8 +1,9 @@
- package com.staffsup;
-
+ package com.oop.servlet;
+ import com.oop.model.TimeT;
+import com.oop.service.IStaffsupDBUtil;
+ import com.oop.service.StaffsupDBUtil;
 import java.io.IOException;
-
-
+import java.util.List;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -12,8 +13,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/CreateTTservlet")
-public class CreateTTservlet extends HttpServlet {
+@WebServlet("/UpdateTCservlet")
+public class UpdateTTservlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
@@ -27,17 +28,25 @@ public class CreateTTservlet extends HttpServlet {
 		
 		boolean isTrue;
 		IStaffsupDBUtil SSDB = new StaffsupDBUtil();
-		isTrue =SSDB.insertstaffsup(examno, module, edate, stime, tdue);
+		isTrue = SSDB.updatestaffsup(examno, module, edate, stime, tdue);
 		
 		if(isTrue == true) {
-			RequestDispatcher dis = request.getRequestDispatcher("successCT.jsp");
+			
+			List<TimeT> timetable = SSDB.getTimetDetails(examno);
+			request.setAttribute("timetable", timetable);
+			
+			RequestDispatcher dis = request.getRequestDispatcher("timetable.jsp");
 			dis.forward(request,response);
 			
-		}else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccessCT.jsp");
-			dis2.forward(request,response);
 		}
-		
+		else {
+			List<TimeT> timetable = SSDB.getTimetDetails(examno);
+			request.setAttribute("timetable", timetable);
+			
+			RequestDispatcher dis = request.getRequestDispatcher("timetable.jsp");
+			dis.forward(request,response);
+			
+		}
 		
 	}
 

@@ -1,6 +1,22 @@
 @charset "ISO-8859-1";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+body{
+  background-color: #d2d2e0;
+}
+
+body{
+	padding:0 10px;
+}
+
 footer {
   background-color: black !important;
   color: white;
@@ -111,18 +127,8 @@ div.social {
   text-align: right;
 }
 
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	font-family: 'Montserrat', sans-serif;
-	
-}
 
-body{
-	background:#27282a;
-	padding:0 10px;
-}
+
 
 .wrapper{
 	max-width:500px;

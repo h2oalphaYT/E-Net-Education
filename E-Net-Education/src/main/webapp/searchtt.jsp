@@ -6,10 +6,12 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 
+
 <link rel="icon" type="images/x-icon" href="images/logo.png">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/searchtt.css">
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">

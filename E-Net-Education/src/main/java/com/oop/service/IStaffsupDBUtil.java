@@ -1,9 +1,12 @@
-package com.staffsup;
+package com.oop.service;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
-import com.staffsup.IStaffsupDBUtil;
+import com.oop.model.TimeT;
+import com.oop.service.StaffsupDBUtil;
+
 
 public interface IStaffsupDBUtil  {
 	

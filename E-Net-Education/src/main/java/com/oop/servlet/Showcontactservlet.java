@@ -26,6 +26,7 @@ public class Showcontactservlet extends HttpServlet {
 		
 		IcontactDBUtill CDB = new ContactDBUtill();
 		ArrayList<Contact> Contactlist =  CDB.getContactDetails();
+		
 		request.setAttribute("Contactlist",Contactlist);
 	}
 

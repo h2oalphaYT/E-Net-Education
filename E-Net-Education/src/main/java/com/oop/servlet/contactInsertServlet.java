@@ -33,7 +33,7 @@ public class contactInsertServlet extends HttpServlet {
 		isTrue = CDB.insertContact(name,Email,massage);
 		 
 		if(isTrue) {
-			 RequestDispatcher dis = request.getRequestDispatcher ("success.jsp");
+			 RequestDispatcher dis = request.getRequestDispatcher ("StudentPortal.jsp");
 			 dis.forward(request, response);
 			 
 			 

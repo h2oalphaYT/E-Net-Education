@@ -78,7 +78,7 @@ E-Net Education
 <!-- Container (Services Section) -->
 <div class="container-fluid text-center"><br>
   <h2>Admin Services</h2><br>
-  <h4>Maintain System Best Accurate</h4>
+  <h4>Maintaining The Accuracy of E-Net-Education</h4>
   <br>
   <div class="row">
     <div class="col-sm-4">

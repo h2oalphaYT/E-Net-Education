@@ -102,7 +102,8 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
     <div class="col-sm-7">
       <div class="row">
         <div class="col-sm-6 form-group">
-           <form action="Updatestaffinfoservlet.java" method="post">
+        
+           <form action="Updatestaffinfoservlet" method="post">
 	
 		
 		First Name

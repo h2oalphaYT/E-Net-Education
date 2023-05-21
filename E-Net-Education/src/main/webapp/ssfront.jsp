@@ -5,11 +5,96 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style type="text/css">
+body{
+    
+    background-color: #d2d2e0 !important;
+        
+}
+.service{
+    padding: 100px 0;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+
+}
+
+.max-width h1{
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color:#4c4e52 !important;
+
+}
+.max-width h1::after{
+    content: "";
+    position:10px;
+    width: 100px;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.content{
+     display:flex;
+     flex-wrap: wrap;
+     justify-content:space-around;
+     
+     
+     
+}
+
+.card{
+    padding: 50px 25px;
+    width: calc(26% - 20px);
+    border-radius: 6px;
+    background-color: #25262e !important;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.card:hover{
+    background-color: #c7940a !important;
+}
+
+.box{
+    transition: all 0.3s ease;
+}
+
+.card:hover .box{
+    transform: scale(1.05);
+    
+}
+
+
+.card:hover .box i{
+    color:#fff;
+}
+
+.card .box h3{
+    font-size:25px;
+    padding: 10px 0 7px;
+    
+}
+</style>
 
 <link rel="icon" type="images/x-icon" href="images/logo.png">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/ssfront.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
 </head>

@@ -11,11 +11,11 @@
 <link rel="icon" type="images/x-icon" href="images/logo.png">
 <link rel ="stylesheet" type="text/css" href="css/staffdetail.css">
 <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
 
 </head>
 
-<body>
+<body style="background: rgb(183,191,196);
+background: linear-gradient(90deg, rgba(183,191,196,1) 2%, rgba(179,182,178,1) 91%);">
 <jsp:include page="/ShowStaffservlet"></jsp:include>
 
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -80,25 +80,31 @@
   </div>
 </nav>
 <br>
- <a href="staffInsert.jsp"><button class="btn btn-outline-dark btn-lg px-4 me-md-2 " type="submit" Style="padding: 15px 32px">Add Staff Details</button></a>
-
-
-
-
 <div class="container">
+<div class="text-right">
+<a href="staffInsert.jsp">
+
+
+<button  class="button3">Add Staff Details</button></a>
+</div>
+
+
+<br>
+
+
 <div class="table-responsive" style="overflow-x:auto;">
 
 <table class="table" border="1" style="border-collapse:collapse" >
    <tr>
       <th>First Name</th>
       <th>Last Name</th>
-      <th>Email</th>
       <th>Contact Number</th>
-      <th>Position</th>
+      <th>Position </th>
+      <th>Email</th>
       <th>User Name</th>
       <th>Password</th>
-      <th class="table-info">Edit</th>
-      <th class="table-info">Delete</th>
+      <th>Edit</th>
+      <th>Delete</th>
    </tr>
    <% ArrayList<staff> stfDetails = new ArrayList<staff>();
    stfDetails = (ArrayList<staff>)request.getAttribute("StaffList"); %>
@@ -114,8 +120,8 @@
       <td><%=Staff.getUsername() %></td>
       <td><%=Staff.getPassword() %></td>
      
-      <td><a href="EditstaffProfile?id=<%=Staff.getUsername() %>"><button class="button button 1">EDIT</button></a></td>
-      <td><a><button class="button button 2" onclick="DeleteAccount('<%=Staff.getUsername()%>')">Remove System</button></a></td>
+      <td><a href="EditstaffProfile?id=<%=Staff.getUsername() %>"><button class="button1 button1">EDIT</button></a></td>
+      <td><a><button class="button2  button2" onclick="DeleteAccount('<%=Staff.getUsername()%>')">REMOVE</button></a></td>
      </tr>
      <% }%>
     

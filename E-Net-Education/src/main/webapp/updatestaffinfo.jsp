@@ -119,7 +119,7 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
 	
 	
 		User Name
-		<input type="text" name="userid" value="<%=Staff.getUsername()%>">
+		<input type="text" name="userid" value="<%=Staff.getUsername()%>" readonly>
 	
 		Phone number
 		<input type="text" name="phone" value="<%=Staff.getPhone() %>">

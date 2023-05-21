@@ -26,7 +26,7 @@ E-Net Education
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : 0.05" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a  class="nav-link active" aria-current="page" href="#">Home</a>
+          <a  class="nav-link active" aria-current="page" href="index.jsp">Home</a>
         </li>
         <li class="nav-item">
           <a href="" class="nav-link" href="#">About Us</a>
@@ -36,10 +36,12 @@ E-Net Education
             Courses
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">IT</a></li>
+            <li><a class="dropdown-item" href="#">SE</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">CSNE</a></li>
+            <li><a class="dropdown-item" href="#">CS</a></li>
+            <li><a class="dropdown-item" href="#">DS</a></li>
           </ul>
         </li>
          <li class="nav-item dropdown">
@@ -47,25 +49,12 @@ E-Net Education
             Terms & Condition
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">About Exams</a></li>
-            <li><a class="dropdown-item" href="#">About System</a></li>
+            <li><a class="dropdown-item" href="termsandconditions.jsp">About Exams</a></li>
+            <li><a class="dropdown-item" href="termsandconditions.jsp">About System</a></li>
            
           </ul>
         </li>
-         <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-user" aria-hidden="true"></i>  Profile </a>
-                
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li>
-                        <a class="dropdown-item" href="">My account</a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="#">Log out</a>
-                    </li>
-                </ul>
-            </li>
+         
             
             <li class="nav-item">
           <a href="Registation.jsp" class="nav-link" href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Registration</a>
@@ -116,7 +105,7 @@ E-Net Education
   <div class="column link">
     <h3>Links</h3>
     <ul>
-      <li class = "back-nav"><a href="#home">Home</a></li>
+      <li class = "back-nav"><a href="index.jsp">Home</a></li>
       <li class = "back-nav"><a href="#team">Team</a></li>
       <li class = "back-nav"><a href="#blogs">Blogs</a></li>
       <li class = "back-nav"><a href="#support">Support</a></li>
@@ -135,10 +124,10 @@ E-Net Education
 <div class="row copyright">
   <div class="footer-menu">
 
-  <a href="#">Home</a>
-  <a href="#">F.A.Q</a>
-  <a href="#">Cookies Policy</a>
-  <a href="#">Terms Of Service</a>
+  <a href="index.jsp">Home</a>
+  <a href="termsandconditions.jsp">F.A.Q</a>
+  <a href="termsandconditions.jsp">Cookies Policy</a>
+  <a href="termsandconditions.jsp">Terms Of Service</a>
   <a href="#">Support</a>
 
   </div>

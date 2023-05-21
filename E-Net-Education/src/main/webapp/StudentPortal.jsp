@@ -392,7 +392,7 @@ background-color :#ffc107;
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" >
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
-                            <a href="ttsview.jsp" ><i class="fa fa-3x fa-line-chart text-warning mb-4"></i></a>
+                            <a href="ttsview.jsp" ><i class="fa fa-3x fa-clock-o text-warning mb-4"></i></a>
                             <h5 class="mb-3 text-dark">Time Table</h5>
                             <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                         </div>

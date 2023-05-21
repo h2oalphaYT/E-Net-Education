@@ -13,7 +13,7 @@
 <div class="wrapper">
 	<div class="alert_wrap erro">
 		<div class="alert_icon">
-		<i class="icon"></i>
+		<i class="fa fa-check" style="font-size:25px;color:red"></i>
 		</div>
 		<div class="content">
 			<p class="title">Ah, Unsuccess!</p>

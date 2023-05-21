@@ -33,6 +33,7 @@ public class Updatestaffinfoservlet extends HttpServlet {
     	String position = request.getParameter("position");
     	String username= request.getParameter("userid");
     	
+    	System.out.println(username);
     	
     	boolean isTrue;
     	
@@ -42,8 +43,7 @@ public class Updatestaffinfoservlet extends HttpServlet {
     	
     	if(isTrue==true) {
     	
-    		RequestDispatcher dis= request.getRequestDispatcher("staffdetail.jsp");
-    		dis.forward(request, response);
+    		response.sendRedirect("staffdetail.jsp");
     	}
     	else {
     		

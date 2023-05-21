@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -79,7 +79,7 @@
       <input type="text" name="l_name" required><br>
       
       <label>Email</label>
-      <input type="text" name="email" required>
+      <input type="email" name="email" required>
       <br>
       <label>Phone Number</label>
       <input type="text" name="phone" required><br>
@@ -88,10 +88,10 @@
       <input type="text" name="position" required><br>
       
       <label>User Name</label>
-      <input type="text" name="uid" required><br>
+      <input type="text" name="uid" pattern ="[L-S]{1}[I-T]{1} [C-F]{1} [0-9]{5}" required><br>
       
       <label>Password</label>
-      <input type="text" name="psw" required><br>
+      <input type="text" name="psw" required ><br>
         
       
       	<input class="button blueButton" type="submit" value="Add Member">

@@ -11,9 +11,8 @@
 
 body{
     
-    background-color: #111;
-    color: #fff;
-    
+    background-color: #d2d2e0 !important;
+        
 }
 
 .service{
@@ -34,6 +33,7 @@ body{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
+    color:#4c4e52 !important;
 
 }
 
@@ -71,7 +71,7 @@ body{
 }
 
 .card:hover{
-    background-color: #dc143c;
+    background-color: #c7940a !important;
 }
 
 .box{

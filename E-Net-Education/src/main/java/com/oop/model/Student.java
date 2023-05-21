@@ -1,6 +1,6 @@
 package com.oop.model;
 
-public class Student {
+public class Student  {
 	
 	private String name;
 	private String l_name;

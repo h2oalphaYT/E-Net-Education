@@ -13,8 +13,12 @@
 
 
 
+
 <style>
 
+html {
+	scroll-behavior :smooth;
+}
 .panel {
   border: 1px solid #ffd11a;
   border-radius:0;
@@ -64,6 +68,216 @@
 color : White;
 background-color :#ffc107; 
 }
+
+//team
+
+#team {
+  background: #fff;
+  padding: 60px 0;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#team .member .member-info {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+#team .member .member-info-content {
+  margin-top: 50px;
+  transition: margin 0.2s;
+}
+
+#team .member:hover .member-info {
+  background: rgba(0, 62, 128, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#team .member .social a:hover {
+  color: #fff;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
+//counter
+
+
+
+
+
+
+.sectionClass {
+  padding: 20px 0px 50px 0px;
+  position: relative;
+  display: block;
+}
+
+.fullWidth {
+  width: 100% !important;
+  display: table;
+  float: none;
+  padding: 0;
+  min-height: 1px;
+  height: 100%;
+  position: relative;
+}
+
+
+.sectiontitle {
+  background-position: center;
+  margin: 30px 0 0px;
+  text-align: center;
+  min-height: 20px;
+}
+
+.sectiontitle h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+.headerLine {
+  width: 160px;
+  height: 2px;
+  display: inline-block;
+  background: #101F2E;
+}
+
+
+.projectFactsWrap{
+    display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+#projectFacts .fullWidth{
+  padding: 0;
+}
+
+.projectFactsWrap .item{
+  width: 25%;
+  height: 100%;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.projectFactsWrap .item:nth-child(1){
+  background: rgb(16, 31, 46);
+}
+
+.projectFactsWrap .item:nth-child(2){
+  background: rgb(18, 34, 51);
+}
+
+.projectFactsWrap .item:nth-child(3){
+  background: rgb(21, 38, 56);
+}
+
+.projectFactsWrap .item:nth-child(4){
+  background: rgb(23, 44, 66);
+}
+
+.projectFactsWrap .item p.number{
+  font-size: 40px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.projectFactsWrap .item p{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Open Sans';
+}
+
+
+.projectFactsWrap .item span{
+  width: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.projectFactsWrap .item i{
+  vertical-align: middle;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.projectFactsWrap .item:hover i, .projectFactsWrap .item:hover p{
+  color: white;
+}
+
+.projectFactsWrap .item:hover span{
+  background: white;
+}
+
+@media (max-width: 786px){
+  .projectFactsWrap .item {
+     flex: 0 0 50%;
+  }
+}
+
+  
+
+
 
 
 </style>
@@ -135,6 +349,8 @@ background-color :#ffc107;
 </nav>
 
 
+<section id="team" style="background-color:light">
+
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="images/carousel-1.jpg" alt="" width="100%" >
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
@@ -144,7 +360,7 @@ background-color :#ffc107;
                                 <h5 class="text-warning text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
                                 <h1 class="display-3 text-white animated slideInDown">The Best Online Examiination Platform</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
-                                <a href="#" class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="#about" class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Attempt Now</a>
                             </div>
                         </div>
@@ -158,9 +374,9 @@ background-color :#ffc107;
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" >
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
-                            <a href="" ><i class="fa fa-3x fa-graduation-cap text-warning mb-4"></i></a>
-                            <h5 class="mb-3">Skilled Instructors</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <a href="#counter" ><i class="fa fa-3x fa-graduation-cap text-warning mb-4"></i></a>
+                            <h5 class="mb-3 text-dark">Skilled Instructors</h5>
+                            <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                         </div>
                     </div>
                 </div>
@@ -168,8 +384,8 @@ background-color :#ffc107;
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <a href="" ><i class="fa fa-3x fa-globe text-warning mb-4"></i></a>
-                            <h5 class="mb-3">Online Classes</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <h5 class="mb-3 text-dark">Online Classes</h5>
+                            <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                         </div>
                     </div>
                 </div>
@@ -177,8 +393,8 @@ background-color :#ffc107;
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <a href="ttsview.jsp" ><i class="fa fa-3x fa-line-chart text-warning mb-4"></i></a>
-                            <h5 class="mb-3">Time Table</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <h5 class="mb-3 text-dark">Time Table</h5>
+                            <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                         </div>
                     </div>
                 </div>
@@ -186,19 +402,56 @@ background-color :#ffc107;
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <a href="" ><i class="fa fa-3x fa-laptop text-warning mb-4"></i></a>
-                            <h5 class="mb-3">MOK Library</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <h5 class="mb-3 text-dark">MOK Library</h5>
+                            <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    </section>
     <!-- Service End -->
+
+<div class="sectiontitle" id="counter">
+    <h2>Projects statistics</h2>
+    <span class="headerLine"></span>
+</div>
+<div id="projectFacts" class="sectionClass">
+    <div class="fullWidth eight columns">
+        <div class="projectFactsWrap ">
+            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                <i class="fa fa-handshake-o"></i>
+                <p id="number1" class="number">12</p>
+                <span></span>
+                <p>Projects done</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                <i class="fa fa-keyboard-o"></i>
+                <p id="number2" class="number">55</p>
+                <span></span>
+                <p>Current Exams</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="1000" style="visibility: visible;">
+                <i class="fa fa-users"></i>
+                <p id="number3" class="number">1000</p>
+                <span></span>
+                <p>Student Activity</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                <i class="	fa fa-mortar-board"></i>
+                <p id="number4" class="number">246</p>
+                <span></span>
+                <p>Graduate Courses</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="about">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp"  style="min-height: 400px;">
@@ -207,7 +460,7 @@ background-color :#ffc107;
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" >
-                    <h6 class="section-title bg-white text-start text-warning pe-3">About Us</h6>
+                    <h4 class="section-title bg-white text-start text-warning pe-3">About Us</h4>
                     <h1 class="mb-4">Welcome to e-Net LEARNING</h1>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
@@ -230,6 +483,12 @@ background-color :#ffc107;
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>International Certificate</p>
                         </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>MOK exams</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>Exams Interfaces</p>
+                        </div>
                     </div>
                     <a class="btn btn-warning py-3 px-5 mt-2" href="">Read More</a>
                 </div>
@@ -237,7 +496,91 @@ background-color :#ffc107;
         </div>
     </div>
 
+<section id="team" style="background: linear-gradient(135deg, #0000008c , black);">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2 class="section-title  text-start text-warning pe-3">Team</h2>
+          <p class="text-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
 
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="100">
+            <div class="member">
+              <img src="images/team-1.jpg"  class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="200">
+            <div class="member">
+              <img src="images/team-2.jpg"  class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="300">
+            <div class="member">
+              <img src="images/team-3.jpg"  class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="400">
+            <div class="member">
+              <img src="images/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
 
   <div class="container-fluid bg-black-50 text-secondary">
@@ -313,7 +656,7 @@ background-color :#ffc107;
   <a href="#">Home</a>
   <a href="#">F.A.Q</a>
   <a href="#">Cookies Policy</a>
-  <a href="#">Terms Of Service</a>
+  <a href="termsandconditions.jsp">Terms Of Service</a>
   <a href="#">Support</a>
 
   </div>
@@ -322,6 +665,57 @@ background-color :#ffc107;
 
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+$.fn.jQuerySimpleCounter = function (options) {
+	  var settings = $.extend(
+	    {
+	      start: 0,
+	      end: 100,
+	      easing: "swing",
+	      duration: 400,
+	      complete: ""
+	    },
+	    options
+	  );
+
+	  var thisElement = $(this);
+
+	  $({ count: settings.start }).animate(
+	    { count: settings.end },
+	    {
+	      duration: settings.duration,
+	      easing: settings.easing,
+	      step: function () {
+	        var mathCount = Math.ceil(this.count);
+	        thisElement.text(mathCount);
+	      },
+	      complete: settings.complete
+	    }
+	  );
+	};
+
+	$("#number1").jQuerySimpleCounter({ end: 12, duration: 3000 });
+	$("#number2").jQuerySimpleCounter({ end: 55, duration: 3000 });
+	$("#number3").jQuerySimpleCounter({ end: 359, duration: 2000 });
+	$("#number4").jQuerySimpleCounter({ end: 246, duration: 2500 });
+
+	/* AUTHOR LINK */
+	$(".about-me-img").hover(
+	  function () {
+	    $(".authorWindowWrapper").stop().fadeIn("fast").find("p").addClass("trans");
+	  },
+	  function () {
+	    $(".authorWindowWrapper")
+	      .stop()
+	      .fadeOut("fast")
+	      .find("p")
+	      .removeClass("trans");
+	  }
+	);
+
+</script>
+
 
 </body>
 </html>

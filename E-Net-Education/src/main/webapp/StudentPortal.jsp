@@ -358,8 +358,8 @@ background-color :#ffc107;
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-warning text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
-                                <h1 class="display-3 text-white animated slideInDown">The Best Online Examiination Platform</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
+                                <h1 class="display-3 text-white animated slideInDown">The Best Online Examination Platform</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">An all-in-one platform to conduct online examinations with ease at an unmatched scale</p>
                                 <a href="#about" class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                                 <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Attempt Now</a>
                             </div>
@@ -376,7 +376,7 @@ background-color :#ffc107;
                         <div class="p-4">
                             <a href="#counter" ><i class="fa fa-3x fa-graduation-cap text-warning mb-4"></i></a>
                             <h5 class="mb-3 text-dark">Skilled Instructors</h5>
-                            <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p class="text-dark">Choose your favourite instructors with best qualifications.</p>
                         </div>
                     </div>
                 </div>
@@ -385,7 +385,7 @@ background-color :#ffc107;
                         <div class="p-4">
                             <a href="" ><i class="fa fa-3x fa-globe text-warning mb-4"></i></a>
                             <h5 class="mb-3 text-dark">Online Classes</h5>
-                            <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p class="text-dark">Take classes at any time, any where</p>
                         </div>
                     </div>
                 </div>
@@ -394,7 +394,7 @@ background-color :#ffc107;
                         <div class="p-4">
                             <a href="ttsview.jsp" ><i class="fa fa-3x fa-clock-o text-warning mb-4"></i></a>
                             <h5 class="mb-3 text-dark">Time Table</h5>
-                            <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p class="text-dark">Check time tables to adjust exams with your daily schedule.</p>
                         </div>
                     </div>
                 </div>
@@ -402,8 +402,8 @@ background-color :#ffc107;
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <a href="" ><i class="fa fa-3x fa-laptop text-warning mb-4"></i></a>
-                            <h5 class="mb-3 text-dark">MOK Library</h5>
-                            <p class="text-dark">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <h5 class="mb-3 text-dark">MOCK Library</h5>
+                            <p class="text-dark">Practice before your real examinations.Try it here!</p>
                         </div>
                     </div>
                 </div>
@@ -461,9 +461,10 @@ background-color :#ffc107;
                 </div>
                 <div class="col-lg-6 wow fadeInUp" >
                     <h4 class="section-title bg-white text-start text-warning pe-3">About Us</h4>
-                    <h1 class="mb-4">Welcome to e-Net LEARNING</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h1 class="mb-4">Welcome to E-Net LEARNING</h1>
+                    <p class="mb-4">Bringing advancements to your exam routine with automated, comprehensive, accurate and accurate options.</p>
+                    <p class="mb-4">Try out questions to attempt multiple times and exams in an adjustable routine. Accuracy and quality service are granted!
+                   </p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>Skilled Instructors</p>
@@ -475,7 +476,7 @@ background-color :#ffc107;
                             <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>International Certificate</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>Skilled Instructors</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>Try any where any time</p>
                         </div>
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>Online Classes</p>
@@ -484,7 +485,7 @@ background-color :#ffc107;
                             <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>International Certificate</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>MOK exams</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>MOCK exams</p>
                         </div>
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-warning me-2"></i>Exams Interfaces</p>
@@ -500,7 +501,7 @@ background-color :#ffc107;
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2 class="section-title  text-start text-warning pe-3">Team</h2>
-          <p class="text-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="text-light">Get to know the professionals behind your view. They make the whole process easier.</p>
         </div>
 
         <div class="row">
@@ -510,8 +511,8 @@ background-color :#ffc107;
               <img src="images/team-1.jpg"  class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
+                  <h4>Pasindu Malinda</h4>
+                  <span>System Administrator</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
@@ -528,8 +529,8 @@ background-color :#ffc107;
               <img src="images/team-2.jpg"  class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
+                  <h4>Malshika Wimalarathna</h4>
+                  <span>System Administrator</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
@@ -546,8 +547,8 @@ background-color :#ffc107;
               <img src="images/team-3.jpg"  class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
+                  <h4>Kavindu Maduranga</h4>
+                  <span>Staff Support</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
@@ -564,8 +565,8 @@ background-color :#ffc107;
               <img src="images/team-4.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
+                  <h4>Chethana Ranasinghe</h4>
+                  <span>Staff Support</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>

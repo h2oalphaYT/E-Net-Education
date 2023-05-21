@@ -367,7 +367,7 @@ div.social {
 
 .btn:hover, .btn:focus, .btn:active{
 	box-shadow:0 0 20px rgba(0,0,0,0.1);
-	background:#27282a;
+	background: #c7940a !important;
 }
 
 </style>

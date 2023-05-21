@@ -122,9 +122,8 @@ public class staffDBUtil implements IstaffDBUtill  {
 			stmt = con.createStatement();
 			String sql ="update staff set f_name='"+fname+"', l_name='"+lname+"', email='"+email+"',contactno='"+phone+"',position='"+position+"' where username='"+username+"'";
 			
-			int rs = stmt.executeUpdate(sql);
-			
-			if(rs>0) {
+			int rs = stmt.executeUpdate(sql);			
+			if(rs > 0) {
 				isSuccess= true;
 			}
 			else {
@@ -134,9 +133,7 @@ public class staffDBUtil implements IstaffDBUtill  {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-			
-		
-		
+	
 		return isSuccess;
 	
 	}

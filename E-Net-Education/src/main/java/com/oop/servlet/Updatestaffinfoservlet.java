@@ -11,6 +11,8 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import com.oop.model.Student;
+import com.oop.model.staff;
 import com.oop.service.IstaffDBUtill;
 import com.oop.service.staffDBUtil;
 
@@ -20,6 +22,8 @@ public class Updatestaffinfoservlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		
+	
 		
 		
 		String Fname = request.getParameter("name");
@@ -37,12 +41,12 @@ public class Updatestaffinfoservlet extends HttpServlet {
     	isTrue = STF.updateStaff(Fname,Lname, email, phone, position, username);
     	
     	if(isTrue==true) {
-    		
-    		
-    		RequestDispatcher dis= request.getRequestDispatcher("AdminPortal.jsp");
+    	
+    		RequestDispatcher dis= request.getRequestDispatcher("staffdetail.jsp");
     		dis.forward(request, response);
     	}
     	else {
+    		
     		RequestDispatcher dis2= request.getRequestDispatcher("unsuccess.jsp");
     		dis2.forward(request, response);
     				

@@ -128,7 +128,7 @@ E-Net Education
   <a href="termsandconditions.jsp">F.A.Q</a>
   <a href="termsandconditions.jsp">Cookies Policy</a>
   <a href="termsandconditions.jsp">Terms Of Service</a>
-  <a href="#">Support</a>
+  
 
   </div>
    <p>Copyright &copy; 2023</p>

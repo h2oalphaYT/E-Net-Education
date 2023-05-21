@@ -6,11 +6,18 @@
 <meta charset="ISO-8859-1">
 <title>Create Time Table</title>
 
+
 <link rel="icon" type="images/x-icon" href="images/logo.png">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/creatett.css">
-
+<style type="text/css">
+footer {
+ 
+  position:fixed !important;
+ 
+}
+</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -116,7 +123,7 @@
 	</form>
 	</div>
 	</div>
-	
+	<div>
 	<footer>
 <div class="row primary">
   <div class="column about">
@@ -166,7 +173,7 @@
 </div>
 
 </footer>
-	
+	</div>
 </body>
 
 </html>

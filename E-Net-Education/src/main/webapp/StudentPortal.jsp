@@ -15,6 +15,9 @@
 
 <style>
 
+html {
+	scroll-behavior :smooth;
+}
 .panel {
   border: 1px solid #ffd11a;
   border-radius:0;
@@ -145,7 +148,7 @@ background-color :#ffc107;
                                 <h1 class="display-3 text-white animated slideInDown">The Best Online Examiination Platform</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
                                 <a href="#" class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Attempt Now</a>
+                                <a href="#about" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Attempt Now</a>
                             </div>
                         </div>
                     </div>
@@ -198,7 +201,7 @@ background-color :#ffc107;
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="about">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp"  style="min-height: 400px;">

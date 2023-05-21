@@ -118,13 +118,13 @@ background: linear-gradient(225deg, rgba(13,12,12,1) 0%, rgba(255,255,255,1) 36%
 	
 	
 		User Name
-		<input type="text" name="userid" value="<%=Staff.getPhone()%>" readonly>
+		<input type="text" name="userid" value="<%=Staff.getUsername()%>">
 	
 		Phone number
-		<input type="text" name="phone" value="<%=Staff.getPosition() %>">
+		<input type="text" name="phone" value="<%=Staff.getPhone() %>">
 		
 		Position
-		<input type="text" name="position" value="<%=Staff.getPassword() %>">
+		<input type="text" name="position" value="<%=Staff.getPosition() %>">
 	
 			
 	<br>

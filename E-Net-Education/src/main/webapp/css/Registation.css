@@ -35,7 +35,7 @@ body{
   bottom: 0;
   height: 3px;
   width: 30px;
-  border-radius: 5px;
+  border-radius: 50px;
   background: linear-gradient(135deg,  #c7940a,#25262e );
 }
 .content form .user-details{

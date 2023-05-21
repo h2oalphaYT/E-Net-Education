@@ -12,10 +12,10 @@
 <body>
 
   <div class="container">
-    <div class="title">Registration</div>
+    <div class="title"> <img src="images/logo.png" width="50px" height="50px">Registration</div>
     <div class="content">
     
-      <form action="Registration" method="post"  id="regFrm">
+      <form action="Registration" method="post"  id="regFrm"> 
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>

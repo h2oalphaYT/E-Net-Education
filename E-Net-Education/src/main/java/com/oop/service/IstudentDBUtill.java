@@ -10,6 +10,8 @@ public interface IstudentDBUtill {
 	
 	public Student getStudent(String email);
 	
+	public  boolean ValidateEmailRepeat(String email);
+	
 	public  boolean insertstudent(String name, String l_name,String UserID, String email, int p_number, String psw, String c_psw, String gender);
 	
 	public  boolean updatePassword( String Email,  String userid, String psw,String Rpsw);

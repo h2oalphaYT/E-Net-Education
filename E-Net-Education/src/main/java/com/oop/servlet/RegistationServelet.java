@@ -1,7 +1,9 @@
 package com.oop.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
+import com.oop.model.Student;
 import com.oop.service.IstudentDBUtill;
 import com.oop.service.StudentDBUtill;
 
@@ -33,7 +35,15 @@ public class RegistationServelet extends HttpServlet {
 		boolean isTrue;
 		
 		IstudentDBUtill STD = new StudentDBUtill();
-		
+				
+		if(STD.ValidateEmailRepeat(email)) {
+			
+			PrintWriter out = response.getWriter();
+			out.println("<script> alert ('You cant add same User email');window.location.replace('Registation.jsp'); </script>");
+			
+		}
+		else {
+			
 		
 		isTrue = STD.insertstudent(name,l_name,userID,email,p_number,psw,c_psw,gender);
 		 
@@ -46,8 +56,10 @@ public class RegistationServelet extends HttpServlet {
 			 RequestDispatcher dis2 = request.getRequestDispatcher ("unsuccess.jsp");
 			 dis2.forward(request, response);
 			 
-			 
 		 }
+		}
+			 
+		 
 	}
 
 }

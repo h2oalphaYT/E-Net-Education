@@ -1,42 +1,81 @@
 @charset "ISO-8859-1";
-
-
-
-input[type=text] {
-  width: 30%;
-  padding: 12px 10px;
-  margin: 18px 0;
-  box-sizing: border-box;
+H4 {
+	text-align: center;
+}
+body{
+	background: linear-gradient(135deg, #0000008c , black);
 }
 
-input[type=password] {
-  width: 30%;
-  padding: 12px 10px;
-  margin: 18px 0;
-  box-sizing: border-box;
+.login-form input[type=text] {
+	width: 95%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: none;
+	text-align: left;
 }
 
-input[type=submit] {
-  width: 30%;
-  padding: 12px 10px;
-  margin: 18px 0;
-  background-color: #04AA6D;
-  box-sizing: border-box;
+.login-form{
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	padding: 40px;
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 20px;
+	box-shadow: 1px 1px 5px #888888;
+	
 }
 
-footer {
-  background-color: black !important;
-  color: white;
-  bottom: 0;
-  width: 100%;
-  font-size: 16px;
- 
+.Login-formHeader{
+	text-align: center;
 }
-footer * {
-  box-sizing: border-box;
-  border: none;
-  outline: none;
+
+
+
+
+.blueButton {
+	-moz-box-shadow: inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow: inset 0px -3px 7px 0px #29bbff;
+	box-shadow: inset 0px -3px 7px 0px #29bbff;
+	background-color: #0088BB;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #0088BB;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 9px 23px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #263666;
 }
+
+.blueButton:hover {
+	background-color: #369cb8;
+}
+
+.blueButton:active {
+	position: relative;
+	top: 1px;
+}
+
+select {
+	width: 95%;
+	padding: 12px 20px;
+	margin: auto 0;
+	display: block;
+	border-radius: 4px;
+	text-align: left;
+	font-size: 16px;
+}
+
+
+
 .row {
   padding: 1em 1em;
   width: 100%;
@@ -53,13 +92,7 @@ footer * {
   padding: 0 2em;
   min-height: 15em;
 }
-h3 {
-  width: 100%;
-  text-align: left;
-  color: white;
-  font-size: 1.4em;
-  white-space: nowrap;
-}
+
 ul {
   list-style: none;
   display: flex;
@@ -91,8 +124,8 @@ button {
   margin-bottom: 5px;
 }
 button {
-  background-color: #c7940a;
-  color: #ffffff;
+  background-color: #00ff40;
+  color: #30812a;
 }
 button:hover  {
   background-color: #ffffff;
@@ -115,19 +148,7 @@ div.social {
   padding: 0.3em 1em;
   background-color: #25262e;
 }
-.footer-menu{
-  float: left;
-    
-}
-.footer-menu a{
-  color: #cfd2d6;
-  padding: 10px;
-  margin-top :10px;
-  text-decoration : none;
-}
-.footer-menu a:hover, .social i:hover{
-  color: #c7940a;
-}
+
 .copyright p {
   font-size: 0.9em;
   text-align: right;
@@ -191,70 +212,6 @@ div.social {
 
 
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
 
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
 
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: Black;
-}
 
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}

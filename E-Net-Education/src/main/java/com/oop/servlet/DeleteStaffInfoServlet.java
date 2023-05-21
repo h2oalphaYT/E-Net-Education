@@ -18,8 +18,10 @@ public class DeleteStaffInfoServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 
 		 String UserID = request.getParameter("id");
+		 
 		   System.out.println(UserID);
 		   boolean isTrue;
+		   
 		   IstaffDBUtill STF = new staffDBUtil();
 		   isTrue = STF.deleteMamber(UserID);
 		   

@@ -76,27 +76,27 @@ E-Net Education
 
 
 <!-- Container (Services Section) -->
-<div class="container-fluid text-center">
-  <h2>Admin Services</h2>
-  <h4>Maintain System Best Accurate</h4>
+<div class="container-fluid text-center"><br>
+  <h2>Admin Services</h2><br>
+  <h4>Maintaining The Accuracy of E-Net-Education</h4>
   <br>
   <div class="row">
     <div class="col-sm-4">
       <a  href="ssfront.jsp" style="text-decoration:none; color: #4d4d4d "><span class="fa fa-pencil-square-o " style="font-size:36px; color:red"></span>
-      <h4> Add Student Time Tabale</h4></a>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4> Add Student Time Table</h4></a>
+      <p>Inserting new time tables</p>
     </div>
     
     <div class="col-sm-4">
       <a href="#" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-clipboard" style="font-size:36px; color:red"></span>
       <h4>Manage Exam Interface</h4></a>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Managing what students can see</p>
     </div>
     
     <div class="col-sm-4">
        <a href="staffdetail.jsp" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-plus-square" style="font-size:36px ;color:red"></span>
-      <h4>  Add Staff Mambers</h4></a>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>  Add Staff Members</h4></a>
+      <p>Insert new staff members</p>
     </div>
   </div>
   
@@ -105,13 +105,13 @@ E-Net Education
     <div class="col-sm-4">
        <a href="#" style="text-decoration:none; color: #4d4d4d"><span class="	fa fa-gear" style= "font-size:36px; color:red"></span>
       <h4>Settings</h4></a>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <p>Fixing system issues</p>
     </div>
     
     <div class="col-sm-4">
        <a href="ContactAdminview.jsp" style="text-decoration:none; color: #4d4d4d"><span class="fa fa-envelope" style= "font-size:36px;color:red"></span>
       <h4>Student Review</h4></a>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <p>For student concerns</p>
     </div>
     
     <div class="col-sm-4">
@@ -154,7 +154,7 @@ E-Net Education
   </div>
 
   <div class="column subscribe">
-    <h6>Providing your children with a batter future</h6>
+    <h6>Providing your children with a better future</h6>
     <div>
       <input type="email" placeholder="Your email id here" />
       <button>Subscribe</button>

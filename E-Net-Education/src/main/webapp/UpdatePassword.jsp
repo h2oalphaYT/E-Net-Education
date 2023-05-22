@@ -84,7 +84,7 @@
                     <div class="form-items">
                         <h3>Forgot Password</h3>
                         <p>Verify in the data below.</p>
-                        <form method="post" action="UpdatePassword" class="requires-validation" novalidate>
+                        <form method="post" action="UpdatePassword" class="requires-validation" >
 
                             <div class="col-md-12">
                                <input class="form-control" type="text" name="email" placeholder="E-mail Address" required>
@@ -122,7 +122,7 @@
                   
 
                             <div class="form-button mt-3">
-                                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                                <button id="submit" type="submit" class="btn btn-primary" >Submit</button>
                             </div>
                         </form>
                     </div>
@@ -138,6 +138,7 @@
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
+
 
 <script>
 
@@ -156,6 +157,8 @@
 	    }, false)
 	  })
 	})()
+
+}
 
 </script>
 

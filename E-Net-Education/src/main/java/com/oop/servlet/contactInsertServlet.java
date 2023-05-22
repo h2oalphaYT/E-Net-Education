@@ -13,6 +13,8 @@ import com.oop.service.IcontactDBUtill;
 import com.oop.service.StudentDBUtill;
 
 @webServlet("/contactInsertServlet")
+
+//singleton Design Pattern
 public class contactInsertServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

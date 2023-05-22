@@ -16,6 +16,8 @@ import com.oop.service.IstudentDBUtill;
 import com.oop.service.StudentDBUtill;
 
 @webServlet("/login")
+
+//singleton Design Pattern
 public class LoginServelet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

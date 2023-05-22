@@ -15,7 +15,7 @@ import com.oop.model.Student;
 import com.oop.model.staff;
 import com.oop.service.IstaffDBUtill;
 import com.oop.service.staffDBUtil;
-
+//singleton Design Pattern
 public class Updatestaffinfoservlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
  

@@ -11,7 +11,7 @@ import java.io.IOException;
 import com.oop.service.IstaffDBUtill;
 import com.oop.service.staffDBUtil;
 
-
+//singleton Design Pattern
 public class StaffInsert extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

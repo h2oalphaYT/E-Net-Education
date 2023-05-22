@@ -14,6 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/DeleteTTservlet")
+//singleton Design Pattern
 public class DeleteTTservlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

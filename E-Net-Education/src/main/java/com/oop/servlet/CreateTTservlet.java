@@ -14,6 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/CreateTTservlet")
+//singleton Design Pattern
 public class CreateTTservlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

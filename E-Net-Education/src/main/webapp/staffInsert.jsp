@@ -23,18 +23,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : 0.05" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a  class="nav-link active" aria-current="page" href="#">Home</a>
+          <a  class="nav-link active" aria-current="page" href="AdminPortal.jsp">Admin Home</a>
         </li>
-       
+        <li class="nav-item">
+        <a href="" class="nav-link" href="#">About Us</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Admin Support
+            Courses
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Contact</a></li>
-            <li><a class="dropdown-item" href="#">Email Admin</a></li>
+            <li><a class="dropdown-item" href="#">SE</a></li>
+            <li><a class="dropdown-item" href="#">CSNE</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">CS</a></li>
+            <li><a class="dropdown-item" href="#">DS</a></li>
+            
           </ul>
         </li>
          <li class="nav-item dropdown">
@@ -42,8 +46,8 @@
             Terms & Condition
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">About Exams</a></li>
-            <li><a class="dropdown-item" href="#">About System</a></li>
+            <li><a class="dropdown-item" href="termsandconditions.jsp">About Exams</a></li>
+            <li><a class="dropdown-item" href="termsandconditions.jsp">About Us</a></li>
            
           </ul>
         </li>
@@ -53,16 +57,19 @@
                 
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li>
-                        <a class="dropdown-item" href="StudentProfile.jsp">My account</a>
+                        <a class="dropdown-item" href="AdminPortal.jsp">My account</a>
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="Login.jsp">Log out</a>
+                        <a class="dropdown-item" href="index.jsp">Log out</a>
                     </li>
                 </ul>
             </li>
             
-        
+            <li class="nav-item">
+          <a href="Registation.jsp" class="nav-link" href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Registration</a>
+        </li>
+      
       </ul>
       
     </div>

@@ -34,20 +34,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : 0.05" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a  class="nav-link active" aria-current="page" href="#">Home</a>
+          <a  class="nav-link active" aria-current="page" href="StudentPortal.jsp">Home</a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link" href="#">About Us</a>
+          <a href="#" class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Courses
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">SE</a></li>
+            <li><a class="dropdown-item" href="#">CSNE</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">CS</a></li>
+            <li><a class="dropdown-item" href="#">DS</a></li>
           </ul>
         </li>
          <li class="nav-item dropdown">
@@ -70,7 +71,7 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item" href="index.jsp">Log out</a>
                     </li>
                 </ul>
             </li>

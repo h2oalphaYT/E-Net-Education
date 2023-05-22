@@ -72,7 +72,7 @@
             </li>
             
             <li class="nav-item">
-          <a href="Registation.jsp" class="nav-link" href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Registration</a>
+          <a href="Registation.jsp" class="nav-link" href="Ragistation.jsp"><i class="fa fa-address-book" aria-hidden="true"></i> Registration</a>
         </li>
       
       </ul>

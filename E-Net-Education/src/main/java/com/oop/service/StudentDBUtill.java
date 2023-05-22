@@ -151,7 +151,7 @@ public  boolean updatePassword( String Email,  String userid, String psw,String 
     		
     		con = DBConnect.getConnection();
     		stmt = con.createStatement();
-    		String sql = "update registration set Password='"+psw+"'where UserID='"+userid+"' and S_email='"+Email+"'";
+    		String sql = "update registration set Password='"+psw+"',Confirm_psw='"+Rpsw+"' where UserID='"+userid+"' and S_email='"+Email+"'";
     				
     		int rs = stmt.executeUpdate(sql);
     		

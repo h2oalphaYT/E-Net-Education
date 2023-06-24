@@ -9,6 +9,8 @@ public class DBConnect {
 	private static String url = "jdbc:mysql://localhost:3306/e-net-education";
 	private static String userName = "root";
 	private static String password = "root";
+	
+
 	private static Connection con;
 
 	public static Connection getConnection() {

@@ -12,11 +12,11 @@ public class TimeT {
 
 		this.examno = examno;
 		this.module = module;
-		this.edate = edate;
+		this.edate = edate; //implementation the data
 		this.stime = stime;
 		this.tdue = tdue;
 	}
-
+    //getters encapsulation
 	public String getExamno() {
 		return examno;
 	}

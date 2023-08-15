@@ -17,11 +17,18 @@ import jakarta.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/SearchTTservlet")
+<<<<<<< Updated upstream
 //singleton Design Pattern
 public class SearchTTservlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+=======
+>>>>>>> Stashed changes
 
-	
+//inheritance
+public class SearchTTservlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;   //singleton design pattern
+
+	//method overriding pholymorpism
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String examno = request.getParameter("examno");

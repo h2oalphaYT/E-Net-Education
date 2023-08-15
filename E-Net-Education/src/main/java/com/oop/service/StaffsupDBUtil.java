@@ -12,8 +12,8 @@ import com.oop.model.Contact;
 import com.oop.service.IcontactDBUtill;
 import com.oop.util.DBConnect;
 
-
-public class StaffsupDBUtil implements IStaffsupDBUtil{
+//implementing the IStaffsupDBUtil
+public class StaffsupDBUtil implements IStaffsupDBUtil {
 	
 	private static boolean isSuccess;
 	private static Connection con = null;
@@ -28,7 +28,7 @@ public class StaffsupDBUtil implements IStaffsupDBUtil{
 		
 		//create database connection
 		
-		
+		//exception handling
 		try {
 		
 			
@@ -53,7 +53,7 @@ public class StaffsupDBUtil implements IStaffsupDBUtil{
 	} 
 	
 	public boolean updatestaffsup(String examno,String module,String edate,String stime,String tdue) {
-		
+		//exception handling
 		try {
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
@@ -82,7 +82,7 @@ public class StaffsupDBUtil implements IStaffsupDBUtil{
 	public List<TimeT> validate(String examno){
 	
 		 ArrayList<TimeT> time = new ArrayList<>();
-		 
+		//exception handling
 		 try {
 			 
 			 con = DBConnect.getConnection();
@@ -115,7 +115,7 @@ public class StaffsupDBUtil implements IStaffsupDBUtil{
 	
 	public List<TimeT> getTimetDetails(String examno){
 		ArrayList<TimeT> time = new ArrayList<>();
-		
+		//exception handling
 		try {
 			
 			 con = DBConnect.getConnection();
@@ -147,7 +147,7 @@ public class StaffsupDBUtil implements IStaffsupDBUtil{
 	}
 	
 	public boolean deletestaffsup(String examno) {
-		
+		//exception handling
 		try {
 			 con = DBConnect.getConnection();
 			 stmt = con.createStatement();
@@ -180,7 +180,7 @@ public class StaffsupDBUtil implements IStaffsupDBUtil{
 	   	 
 	   
 	   	 //validating
-	   	 
+	   	 //exception handling
 	   	 try {
 	   		 con = DBConnect.getConnection();
 	   		 stmt = con.createStatement();

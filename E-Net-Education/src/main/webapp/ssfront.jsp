@@ -5,7 +5,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+
+
+
 <style type="text/css">
+
 body{
     
     background-color: #d2d2e0 !important;
@@ -89,17 +93,20 @@ body{
     color:#fff;
     
 }
+
 </style>
+
 
 <link rel="icon" type="images/x-icon" href="images/logo.png">
 <link rel="stylesheet" type="text/css" href="css/ssfront.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
 </head>
+
 <body>
+
+
 
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
@@ -112,7 +119,7 @@ body{
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style = "flex-grow : 0.05" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a  class="nav-link active" aria-current="page" href="#">Admin Home</a>
+          <a  class="nav-link active" aria-current="page" href="AdminPortal.jsp">Admin Home</a>
         </li>
         <li class="nav-item">
         <a href="" class="nav-link" href="#">About Us</a>
@@ -164,6 +171,7 @@ body{
 </nav>
 
 
+
 	<div class="service">
         <div class="max-width">
             <h1>Staff Supporter</h1>
@@ -193,6 +201,7 @@ body{
         </div>
     </div>
 
+//footer
 
 <footer>
 <div class="row primary">
@@ -243,6 +252,6 @@ body{
 </div>
 
 </footer>
-
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

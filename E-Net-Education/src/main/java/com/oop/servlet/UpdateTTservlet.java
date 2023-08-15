@@ -14,10 +14,12 @@ import jakarta.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/UpdateTCservlet")
-public class UpdateTTservlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
-	
+//inheritance
+public class UpdateTTservlet extends HttpServlet {
+	private static final long serialVersionUID = 1L; //singleton design pattern
+
+	//method overriding pholymorpism
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String examno = request.getParameter("examno");

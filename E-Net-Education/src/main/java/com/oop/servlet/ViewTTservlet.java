@@ -12,8 +12,13 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 //singleton Design Pattern
 public class ViewTTservlet extends HttpServlet {
+	//singleton pattern
 	private static final long serialVersionUID = 1L;
 
+<<<<<<< Updated upstream
+=======
+	//method overriding polimorphism
+>>>>>>> Stashed changes
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		PrintWriter out = response.getWriter();
